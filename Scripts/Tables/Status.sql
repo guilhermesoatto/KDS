@@ -1,0 +1,20 @@
+USE [KDS]
+GO
+
+/****** Object:  Table [dbo].[Status]    Script Date: 27/06/2018 11:09:09 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Status](
+	[IdStatus] [int] IDENTITY(1,1) NOT NULL,
+	[Descricao] [varchar](50) NULL,
+ CONSTRAINT [PK_Status] PRIMARY KEY CLUSTERED 
+(
+	[IdStatus] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
