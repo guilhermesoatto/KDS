@@ -1,0 +1,93 @@
+--/api/kds/comandas
+
+--/api/kds/comandas?itemStatus=2
+--/api/kds/comandas?canalAtendimento='ATM'
+
+[
+	{
+		"success" : true,
+		"id" : "7949c2ff-caec-437e-8168-asdfASsad089",
+		"codigoComanda" : "FA-1515",
+		"pedidos": [
+			{
+				"id" : "7949c2ff-caec-437e-8168-a8s7d6as7df6",
+				"canalAtendimento" : "ATM",
+				"codigoPedido": 5857,
+				"statusAtualPedido" : "EM PREPARO",
+				"codigoStatusAtualPedido" : 2,
+				"idComanda": "7949c2ff-caec-437e-8168-asdfASsad089",
+				"dataHoraInclusao": "2018-01-01 12:12:12",
+				"itens": [
+					{
+						"dataHoraInclusao": "2018-01-01 12:12:12",
+						"objectId": "7949c2ff-caec-437e-8168-a8s7d6as7df6",
+						"descricao": "MISTO QUENTE",
+						"statusAtualItem" : "EM PREPARO",
+						"tempoMedioPreparacaoEmMinutos": 5
+						"codigoStatusAtualItem" : 1,
+						"observacoes" : "BACON BEM PASSADO"
+						"insumos": [
+						    {
+							   "objectId" : "7949c2ff-caec-437e-8168-a8s7d6as7df6",
+							   "descricao" : "PACOTES DE KETCHUP",
+							   "quantidade": 5,
+							   "podeRemover": false
+							},
+							{
+							   "objectId" : "7949c2ff-caec-437e-8168-a8s7d6as7df6",
+							   "descricao" : "PÃO",
+							   "quantidade": 1,
+							   "podeRemover": false
+							},
+							{
+							   "objectId" : "7949c2ff-caec-437e-8168-a8s7d6as7df6",
+							   "descricao" : "PRESUNTO",
+							   "quantidade": 2,
+							   "podeRemover": true
+							},
+							{
+							   "objectId" : "7949c2ff-caec-437e-8168-a8s7d6as7df6",
+							   "descricao" : "QUEIJO",
+							   "quantidade": 2,
+							   "podeRemover": false
+							}
+						],
+						"adicionais": [
+							{
+							   "objectId" : "7949c2ff-caec-437e-8168-a8s7d6as7df6",
+							   "descricao" : "DOBRO DE QUEIJO"
+							},
+							{
+							   "objectId" : "7949c2ff-caec-437e-8168-a8s7d6as7df6",
+							   "descricao" : "BACON"
+							}
+						]
+					},
+					{
+						"objectId": "7949c2ff-caec-437e-8168-a8s7d6as7df6",
+						"descricao": "COCA-COLA ZERO LATA 350ML",
+						"statusAtual" : "EM PREPARO",
+						"codigoStatusAtualItem" : 4
+					}
+				]
+			}
+		]
+	}
+]
+
+--PELO MENOS 1 PEDIDO : Status Code 200
+--NAO VEIO NENHUM PEDIDO: Status Code 404 Body []
+
+
+Exemplo de página
+/api/kds/pedidos?take=10&skip=50
+
+Exemplo de página 2
+{
+	items: [],
+	paging: {
+		hasNext: false
+	}
+}
+
+1 = Preparar, 2 = Em Preparo, 3 = Pronto, 4 = Entregue, 5 = Cancelado

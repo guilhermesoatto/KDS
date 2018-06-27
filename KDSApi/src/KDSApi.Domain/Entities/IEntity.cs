@@ -1,0 +1,9 @@
+﻿using System;
+
+namespace KDSApi.Domain.Entities
+{
+    public interface IEntity
+    {
+        Guid Id { get; set; }
+    }
+}
