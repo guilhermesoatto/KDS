@@ -7,25 +7,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{811DA371-4AD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AA3CB68F-042D-40AC-A9E5-91F564F1D204}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Web", "src\BasicCrud.Web\KDSApi.Web.csproj", "{EE6F254D-D31F-4ED2-85E3-01F2D28EC2D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Web", "src\KDSApi.Web\KDSApi.Web.csproj", "{EE6F254D-D31F-4ED2-85E3-01F2D28EC2D2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Application", "src\BasicCrud.Application\KDSApi.Application.csproj", "{CE66F6FD-F8C7-4C4B-B744-7B30F718EAC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Application", "src\KDSApi.Application\KDSApi.Application.csproj", "{CE66F6FD-F8C7-4C4B-B744-7B30F718EAC6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Domain", "src\BasicCrud.Domain\KDSApi.Domain.csproj", "{2F6B1AE9-BA58-4A09-A7F8-2FD361C9764B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Domain", "src\KDSApi.Domain\KDSApi.Domain.csproj", "{2F6B1AE9-BA58-4A09-A7F8-2FD361C9764B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Dto", "src\BasicCrud.Dto\KDSApi.Dto.csproj", "{14BC33B5-F8CE-4A30-9181-459DEE9F2C04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Dto", "src\KDSApi.Dto\KDSApi.Dto.csproj", "{14BC33B5-F8CE-4A30-9181-459DEE9F2C04}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Infra.SqlServer", "src\BasicCrud.Infra.SqlServer\KDSApi.Infra.SqlServer.csproj", "{44A7783D-B085-4858-BA11-56DEC5EDC3AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Infra.SqlServer", "src\KDSApi.Infra.SqlServer\KDSApi.Infra.SqlServer.csproj", "{44A7783D-B085-4858-BA11-56DEC5EDC3AA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Infra.SqLite", "src\BasicCrud.Infra.SqLite\KDSApi.Infra.SqLite.csproj", "{B2534EB0-6616-4078-967A-CDF6194CAC46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Infra.SqLite", "src\KDSApi.Infra.SqLite\KDSApi.Infra.SqLite.csproj", "{B2534EB0-6616-4078-967A-CDF6194CAC46}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Infra", "src\BasicCrud.Infra\KDSApi.Infra.csproj", "{C043BD1E-75F5-4407-9E68-857DDCE5CAE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Infra", "src\KDSApi.Infra\KDSApi.Infra.csproj", "{C043BD1E-75F5-4407-9E68-857DDCE5CAE1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Web.Tests", "test\BasicCrud.Web.Tests\KDSApi.Web.Tests.csproj", "{91E0F8A1-BD3B-43DC-85D6-6A233F85B795}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Web.Tests", "test\KDSApi.Web.Tests\KDSApi.Web.Tests.csproj", "{91E0F8A1-BD3B-43DC-85D6-6A233F85B795}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Application.Tests", "test\BasicCrud.Application.Tests\KDSApi.Application.Tests.csproj", "{7E2D15D2-0B6D-461F-B4D6-BE40F1DBD77D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Application.Tests", "test\KDSApi.Application.Tests\KDSApi.Application.Tests.csproj", "{7E2D15D2-0B6D-461F-B4D6-BE40F1DBD77D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Domain.Tests", "test\BasicCrud.Domain.Tests\KDSApi.Domain.Tests.csproj", "{B7DD0015-7424-4970-8C7E-9F3385C4C135}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KDSApi.Domain.Tests", "test\KDSApi.Domain.Tests\KDSApi.Domain.Tests.csproj", "{B7DD0015-7424-4970-8C7E-9F3385C4C135}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

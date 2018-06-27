@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KDSApi.Infra\KDSApi.Infra.csproj" />
+    <ProjectReference Include="..\KDSApi.Domain\KDSApi.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

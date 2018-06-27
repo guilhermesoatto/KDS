@@ -1,0 +1,17 @@
+D:\Git\KDS\KDSApi\src\BasicCrud.Domain\bin\Debug\netstandard2.0\KDSApi.Domain.deps.json
+D:\Git\KDS\KDSApi\src\BasicCrud.Domain\bin\Debug\netstandard2.0\KDSApi.Domain.dll
+D:\Git\KDS\KDSApi\src\BasicCrud.Domain\bin\Debug\netstandard2.0\KDSApi.Domain.pdb
+D:\Git\KDS\KDSApi\src\BasicCrud.Domain\obj\Debug\netstandard2.0\KDSApi.Domain.csprojAssemblyReference.cache
+D:\Git\KDS\KDSApi\src\BasicCrud.Domain\obj\Debug\netstandard2.0\KDSApi.Domain.csproj.CoreCompileInputs.cache
+D:\Git\KDS\KDSApi\src\BasicCrud.Domain\obj\Debug\netstandard2.0\KDSApi.Domain.AssemblyInfoInputs.cache
+D:\Git\KDS\KDSApi\src\BasicCrud.Domain\obj\Debug\netstandard2.0\KDSApi.Domain.AssemblyInfo.cs
+D:\Git\KDS\KDSApi\src\BasicCrud.Domain\obj\Debug\netstandard2.0\KDSApi.Domain.dll
+D:\Git\KDS\KDSApi\src\BasicCrud.Domain\obj\Debug\netstandard2.0\KDSApi.Domain.pdb
+D:\Git\KDS\KDSApi\src\KDSApi.Domain\bin\Debug\netstandard2.0\KDSApi.Domain.deps.json
+D:\Git\KDS\KDSApi\src\KDSApi.Domain\bin\Debug\netstandard2.0\KDSApi.Domain.dll
+D:\Git\KDS\KDSApi\src\KDSApi.Domain\bin\Debug\netstandard2.0\KDSApi.Domain.pdb
+D:\Git\KDS\KDSApi\src\KDSApi.Domain\obj\Debug\netstandard2.0\KDSApi.Domain.csproj.CoreCompileInputs.cache
+D:\Git\KDS\KDSApi\src\KDSApi.Domain\obj\Debug\netstandard2.0\KDSApi.Domain.AssemblyInfoInputs.cache
+D:\Git\KDS\KDSApi\src\KDSApi.Domain\obj\Debug\netstandard2.0\KDSApi.Domain.AssemblyInfo.cs
+D:\Git\KDS\KDSApi\src\KDSApi.Domain\obj\Debug\netstandard2.0\KDSApi.Domain.dll
+D:\Git\KDS\KDSApi\src\KDSApi.Domain\obj\Debug\netstandard2.0\KDSApi.Domain.pdb
