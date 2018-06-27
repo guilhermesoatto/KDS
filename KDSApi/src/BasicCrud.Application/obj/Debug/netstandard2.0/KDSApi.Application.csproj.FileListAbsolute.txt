@@ -1,0 +1,16 @@
+D:\Git\KDS\KDSApi\src\BasicCrud.Application\bin\Debug\netstandard2.0\KDSApi.Application.deps.json
+D:\Git\KDS\KDSApi\src\BasicCrud.Application\bin\Debug\netstandard2.0\KDSApi.Application.dll
+D:\Git\KDS\KDSApi\src\BasicCrud.Application\bin\Debug\netstandard2.0\KDSApi.Application.pdb
+D:\Git\KDS\KDSApi\src\BasicCrud.Application\bin\Debug\netstandard2.0\KDSApi.Domain.dll
+D:\Git\KDS\KDSApi\src\BasicCrud.Application\bin\Debug\netstandard2.0\KDSApi.Dto.dll
+D:\Git\KDS\KDSApi\src\BasicCrud.Application\bin\Debug\netstandard2.0\KDSApi.Infra.dll
+D:\Git\KDS\KDSApi\src\BasicCrud.Application\bin\Debug\netstandard2.0\KDSApi.Domain.pdb
+D:\Git\KDS\KDSApi\src\BasicCrud.Application\bin\Debug\netstandard2.0\KDSApi.Infra.pdb
+D:\Git\KDS\KDSApi\src\BasicCrud.Application\bin\Debug\netstandard2.0\KDSApi.Dto.pdb
+D:\Git\KDS\KDSApi\src\BasicCrud.Application\obj\Debug\netstandard2.0\KDSApi.Application.csprojAssemblyReference.cache
+D:\Git\KDS\KDSApi\src\BasicCrud.Application\obj\Debug\netstandard2.0\KDSApi.Application.csproj.CoreCompileInputs.cache
+D:\Git\KDS\KDSApi\src\BasicCrud.Application\obj\Debug\netstandard2.0\KDSApi.Application.AssemblyInfoInputs.cache
+D:\Git\KDS\KDSApi\src\BasicCrud.Application\obj\Debug\netstandard2.0\KDSApi.Application.AssemblyInfo.cs
+D:\Git\KDS\KDSApi\src\BasicCrud.Application\obj\Debug\netstandard2.0\KDSApi.Application.csproj.CopyComplete
+D:\Git\KDS\KDSApi\src\BasicCrud.Application\obj\Debug\netstandard2.0\KDSApi.Application.dll
+D:\Git\KDS\KDSApi\src\BasicCrud.Application\obj\Debug\netstandard2.0\KDSApi.Application.pdb

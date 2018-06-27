@@ -1,0 +1,16 @@
+D:\Git\KDS\KDSApi\src\BasicCrud.Infra.SqLite\bin\Debug\netstandard2.0\KDSApi.Infra.SqLite.deps.json
+D:\Git\KDS\KDSApi\src\BasicCrud.Infra.SqLite\bin\Debug\netstandard2.0\KDSApi.Infra.SqLite.dll
+D:\Git\KDS\KDSApi\src\BasicCrud.Infra.SqLite\bin\Debug\netstandard2.0\KDSApi.Infra.SqLite.pdb
+D:\Git\KDS\KDSApi\src\BasicCrud.Infra.SqLite\bin\Debug\netstandard2.0\KDSApi.Domain.dll
+D:\Git\KDS\KDSApi\src\BasicCrud.Infra.SqLite\bin\Debug\netstandard2.0\KDSApi.Dto.dll
+D:\Git\KDS\KDSApi\src\BasicCrud.Infra.SqLite\bin\Debug\netstandard2.0\KDSApi.Infra.dll
+D:\Git\KDS\KDSApi\src\BasicCrud.Infra.SqLite\bin\Debug\netstandard2.0\KDSApi.Infra.pdb
+D:\Git\KDS\KDSApi\src\BasicCrud.Infra.SqLite\bin\Debug\netstandard2.0\KDSApi.Domain.pdb
+D:\Git\KDS\KDSApi\src\BasicCrud.Infra.SqLite\bin\Debug\netstandard2.0\KDSApi.Dto.pdb
+D:\Git\KDS\KDSApi\src\BasicCrud.Infra.SqLite\obj\Debug\netstandard2.0\KDSApi.Infra.SqLite.csprojAssemblyReference.cache
+D:\Git\KDS\KDSApi\src\BasicCrud.Infra.SqLite\obj\Debug\netstandard2.0\KDSApi.Infra.SqLite.csproj.CoreCompileInputs.cache
+D:\Git\KDS\KDSApi\src\BasicCrud.Infra.SqLite\obj\Debug\netstandard2.0\KDSApi.Infra.SqLite.AssemblyInfoInputs.cache
+D:\Git\KDS\KDSApi\src\BasicCrud.Infra.SqLite\obj\Debug\netstandard2.0\KDSApi.Infra.SqLite.AssemblyInfo.cs
+D:\Git\KDS\KDSApi\src\BasicCrud.Infra.SqLite\obj\Debug\netstandard2.0\KDSApi.Infra.SqLite.csproj.CopyComplete
+D:\Git\KDS\KDSApi\src\BasicCrud.Infra.SqLite\obj\Debug\netstandard2.0\KDSApi.Infra.SqLite.dll
+D:\Git\KDS\KDSApi\src\BasicCrud.Infra.SqLite\obj\Debug\netstandard2.0\KDSApi.Infra.SqLite.pdb

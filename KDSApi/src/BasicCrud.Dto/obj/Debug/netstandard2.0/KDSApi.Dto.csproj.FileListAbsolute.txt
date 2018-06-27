@@ -1,0 +1,9 @@
+D:\Git\KDS\KDSApi\src\BasicCrud.Dto\bin\Debug\netstandard2.0\KDSApi.Dto.deps.json
+D:\Git\KDS\KDSApi\src\BasicCrud.Dto\bin\Debug\netstandard2.0\KDSApi.Dto.dll
+D:\Git\KDS\KDSApi\src\BasicCrud.Dto\bin\Debug\netstandard2.0\KDSApi.Dto.pdb
+D:\Git\KDS\KDSApi\src\BasicCrud.Dto\obj\Debug\netstandard2.0\KDSApi.Dto.csprojAssemblyReference.cache
+D:\Git\KDS\KDSApi\src\BasicCrud.Dto\obj\Debug\netstandard2.0\KDSApi.Dto.csproj.CoreCompileInputs.cache
+D:\Git\KDS\KDSApi\src\BasicCrud.Dto\obj\Debug\netstandard2.0\KDSApi.Dto.AssemblyInfoInputs.cache
+D:\Git\KDS\KDSApi\src\BasicCrud.Dto\obj\Debug\netstandard2.0\KDSApi.Dto.AssemblyInfo.cs
+D:\Git\KDS\KDSApi\src\BasicCrud.Dto\obj\Debug\netstandard2.0\KDSApi.Dto.dll
+D:\Git\KDS\KDSApi\src\BasicCrud.Dto\obj\Debug\netstandard2.0\KDSApi.Dto.pdb

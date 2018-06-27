@@ -1,0 +1,94 @@
+2018-06-27 16:42:58.042 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Infrastructure An 'IServiceProvider' was created for internal use by Entity Framework.
+2018-06-27 16:42:58.888 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Hosting starting
+2018-06-27 16:42:59.135 -03:00 [INFO] Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core "2.0.2-rtm-10011" initialized '"SqliteCrudDbContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite"' with options: "SensitiveDataLoggingEnabled "
+2018-06-27 16:42:59.463 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESCOO187Q1"" started.
+2018-06-27 16:42:59.510 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Hosting started
+2018-06-27 16:42:59.510 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Loaded hosting startup assembly "KDSApi.Web"
+2018-06-27 16:42:59.510 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Loaded hosting startup assembly "Microsoft.AspNetCore.ApplicationInsights.HostingStartup"
+2018-06-27 16:42:59.539 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Migrations Migrating using database '"main"' on server '"BasicCrud.db"'.
+2018-06-27 16:42:59.542 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"main"' on server '"BasicCrud.db"'.
+2018-06-27 16:42:59.631 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"main"' on server '"D:\Git\KDS\KDSApi\src\BasicCrud.Web\BasicCrud.db"'.
+2018-06-27 16:42:59.638 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-27 16:42:59.667 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-27 16:42:59.668 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"main"' on server '"BasicCrud.db"'.
+2018-06-27 16:42:59.669 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"main"' on server '"D:\Git\KDS\KDSApi\src\BasicCrud.Web\BasicCrud.db"'.
+2018-06-27 16:42:59.669 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-27 16:42:59.669 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-27 16:42:59.669 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*) FROM \"sqlite_master\" WHERE \"name\" = '__EFMigrationsHistory' AND \"type\" = 'table';"
+2018-06-27 16:42:59.671 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*) FROM \"sqlite_master\" WHERE \"name\" = '__EFMigrationsHistory' AND \"type\" = 'table';"
+2018-06-27 16:42:59.671 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"main"' on server '"D:\Git\KDS\KDSApi\src\BasicCrud.Web\BasicCrud.db"'.
+2018-06-27 16:42:59.671 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"main"' on server '"BasicCrud.db"'.
+2018-06-27 16:42:59.671 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"main"' on server '"BasicCrud.db"'.
+2018-06-27 16:42:59.672 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"main"' on server '"D:\Git\KDS\KDSApi\src\BasicCrud.Web\BasicCrud.db"'.
+2018-06-27 16:42:59.672 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-27 16:42:59.672 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-27 16:42:59.672 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"main"' on server '"BasicCrud.db"'.
+2018-06-27 16:42:59.673 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"main"' on server '"D:\Git\KDS\KDSApi\src\BasicCrud.Web\BasicCrud.db"'.
+2018-06-27 16:42:59.673 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-27 16:42:59.673 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-27 16:42:59.673 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*) FROM \"sqlite_master\" WHERE \"name\" = '__EFMigrationsHistory' AND \"type\" = 'table';"
+2018-06-27 16:42:59.674 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*) FROM \"sqlite_master\" WHERE \"name\" = '__EFMigrationsHistory' AND \"type\" = 'table';"
+2018-06-27 16:42:59.674 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"main"' on server '"D:\Git\KDS\KDSApi\src\BasicCrud.Web\BasicCrud.db"'.
+2018-06-27 16:42:59.674 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"main"' on server '"BasicCrud.db"'.
+2018-06-27 16:42:59.676 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"main"' on server '"BasicCrud.db"'.
+2018-06-27 16:42:59.678 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"main"' on server '"D:\Git\KDS\KDSApi\src\BasicCrud.Web\BasicCrud.db"'.
+2018-06-27 16:42:59.678 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-27 16:42:59.678 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-27 16:42:59.678 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+2018-06-27 16:42:59.679 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+2018-06-27 16:42:59.680 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command A data reader was disposed.
+2018-06-27 16:42:59.680 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"main"' on server '"D:\Git\KDS\KDSApi\src\BasicCrud.Web\BasicCrud.db"'.
+2018-06-27 16:42:59.680 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"main"' on server '"BasicCrud.db"'.
+2018-06-27 16:42:59.704 -03:00 [INFO] Microsoft.EntityFrameworkCore.Migrations No migrations were applied. The database is already up to date.
+2018-06-27 16:42:59.997 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESCOO187Q1"" received FIN.
+2018-06-27 16:42:59.997 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESCOO187Q1"" disconnecting.
+2018-06-27 16:42:59.998 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESCOO187Q1"" sending FIN.
+2018-06-27 16:43:00.019 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESCOO187Q1"" stopped.
+2018-06-27 16:43:03.188 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESCOO187Q2"" started.
+2018-06-27 16:43:03.202 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESCOO187Q3"" started.
+2018-06-27 16:43:05.140 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/  
+2018-06-27 16:43:05.217 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 16:43:05.232 -03:00 [INFO] Tnf.Settings.Internal.SettingDefinitionManager Settings definitions loaded: [Tnf.Localization.DefaultLanguageName,Tnf.Timing.TimeZone]
+2018-06-27 16:43:05.364 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 16:43:05.463 -03:00 [DBUG] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The request path "" does not match the path filter
+2018-06-27 16:43:05.664 -03:00 [DBUG] Microsoft.AspNetCore.Routing.RouteBase Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}"'.
+2018-06-27 16:43:05.689 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.ActionSelector No actions matched the current request. Route values: ["controller=Home", "action=Index"]
+2018-06-27 16:43:05.690 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.MvcRouteHandler No actions matched the current request. Route values: ["controller=Home", "action=Index"]
+2018-06-27 16:43:05.690 -03:00 [DBUG] Microsoft.AspNetCore.Builder.RouterMiddleware Request did not match any routes.
+2018-06-27 16:43:05.849 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESCOO187Q3"" completed keep alive response.
+2018-06-27 16:43:05.849 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 714.001ms 302 
+2018-06-27 16:43:06.147 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2018-06-27 16:43:06.147 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 16:43:06.148 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 16:43:06.200 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESCOO187Q3"" completed keep alive response.
+2018-06-27 16:43:06.200 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 52.8529ms 301 
+2018-06-27 16:43:06.204 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/  
+2018-06-27 16:43:06.205 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 16:43:06.205 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 16:43:06.239 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESCOO187Q3"" completed keep alive response.
+2018-06-27 16:43:06.239 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 34.817ms 200 text/html
+2018-06-27 16:43:06.304 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESCOO187Q4"" started.
+2018-06-27 16:43:06.305 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2018-06-27 16:43:06.306 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 16:43:06.306 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 16:43:06.306 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTT
