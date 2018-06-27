@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KDSApi.Web</name>
+    </assembly>
+    <members>
+        <member name="T:HelloWorld.Web.Controllers.ExceptionController">
+            <summary>
+            Exception API
+            </summary>
+        </member>
+        <member name="M:HelloWorld.Web.Controllers.ExceptionController.Get">
+            <summary>
+            Simulate throw exception in controller scope
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HelloWorld.Web.Controllers.KDSApiController">
+            <summary>
+            Hello API
+            </summary>
+        </member>
+        <member name="M:HelloWorld.Web.Controllers.KDSApiController.Get">
+            <summary>
+            Get a localized Hello string according with request culture
+            For change culture sent in headers of request the key <see cref="F:Tnf.TnfConsts.Localization.DefaultLanguage"/>
+            </summary>
+        </member>
+    </members>
+</doc>
