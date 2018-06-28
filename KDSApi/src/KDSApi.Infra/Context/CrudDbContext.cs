@@ -12,6 +12,8 @@ namespace KDSApi.Infra.Context
 
         public DbSet<Product> Products { get; set; }
 
+        public DbSet<Comanda> Comanda { get; set; }
+
         // Importante o construtor do contexto receber as opções com o tipo generico definido: DbContextOptions<TDbContext>
         public CrudDbContext(DbContextOptions<CrudDbContext> options, ITnfSession session)
             : base(options, session)
@@ -24,6 +26,7 @@ namespace KDSApi.Infra.Context
 
             modelBuilder.ApplyConfiguration(new CustomerTypeConfiguration());
             modelBuilder.ApplyConfiguration(new ProductTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new ComandaTypeConfigurations());
         }
     }
 }

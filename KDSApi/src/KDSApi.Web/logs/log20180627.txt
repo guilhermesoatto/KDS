@@ -91,4 +91,356 @@ ORDER BY \"MigrationId\";"
 2018-06-27 16:43:06.305 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
 2018-06-27 16:43:06.306 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
 2018-06-27 16:43:06.306 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
-2018-06-27 16:43:06.306 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTT
+2018-06-27 16:43:06.306 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTT2018-06-27 20:59:32.381 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Infrastructure An 'IServiceProvider' was created for internal use by Entity Framework.
+2018-06-27 20:59:33.042 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Hosting starting
+2018-06-27 20:59:33.346 -03:00 [INFO] Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core "2.0.2-rtm-10011" initialized '"SqlServerCrudDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled "
+2018-06-27 20:59:33.411 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Hosting started
+2018-06-27 20:59:33.412 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Loaded hosting startup assembly "KDSApi.Web"
+2018-06-27 20:59:33.412 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Loaded hosting startup assembly "Microsoft.AspNetCore.ApplicationInsights.HostingStartup"
+2018-06-27 20:59:33.460 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NLT"" started.
+2018-06-27 20:59:33.460 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NLS"" started.
+2018-06-27 20:59:33.505 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESH83Q5NLT"" received FIN.
+2018-06-27 20:59:33.505 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESH83Q5NLS"" received FIN.
+2018-06-27 20:59:33.505 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NLT"" disconnecting.
+2018-06-27 20:59:33.505 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NLS"" disconnecting.
+2018-06-27 20:59:33.506 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESH83Q5NLS"" sending FIN.
+2018-06-27 20:59:33.506 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESH83Q5NLT"" sending FIN.
+2018-06-27 20:59:33.512 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NLT"" stopped.
+2018-06-27 20:59:33.512 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NLS"" stopped.
+2018-06-27 20:59:33.674 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Migrations Migrating using database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 20:59:33.699 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 20:59:34.284 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection An error occurred using the connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+System.Data.SqlClient.SqlException (0x80131904): Falha de logon do usuário 'sa'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass18_0.<Exists>b__0(DateTime giveUp)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerDatabaseCreator.Exists(Boolean retryOnNotExists)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at KDSApi.Infra.MigrationExtensions.<>c__DisplayClass0_0.<MigrateDatabase>b__0() in D:\Git\KDS\KDSApi\src\KDSApi.Infra\MigrationExtensions.cs:line 16
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+ClientConnectionId:0dde32e1-1693-4cc3-9eb2-8a0898370032
+Error Number:18456,State:1,Class:14
+2018-06-27 21:02:19.518 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NLU"" started.
+2018-06-27 21:02:19.519 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESH83Q5NLU"" received FIN.
+2018-06-27 21:02:19.519 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NLU"" disconnecting.
+2018-06-27 21:02:19.524 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NM0"" started.
+2018-06-27 21:02:19.524 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NLV"" started.
+2018-06-27 21:02:19.528 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESH83Q5NM0"" received FIN.
+2018-06-27 21:02:19.528 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NM0"" disconnecting.
+2018-06-27 21:02:19.528 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NM1"" started.
+2018-06-27 21:02:19.528 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESH83Q5NM0"" sending FIN.
+2018-06-27 21:02:19.528 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NM2"" started.
+2018-06-27 21:02:19.528 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESH83Q5NLV"" received FIN.
+2018-06-27 21:02:19.528 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NLV"" disconnecting.
+2018-06-27 21:02:19.529 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESH83Q5NM2"" received FIN.
+2018-06-27 21:02:19.529 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NM2"" disconnecting.
+2018-06-27 21:02:19.529 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESH83Q5NM2"" sending FIN.
+2018-06-27 21:02:19.529 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NM0"" stopped.
+2018-06-27 21:02:19.529 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NM2"" stopped.
+2018-06-27 21:02:19.529 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESH83Q5NLU"" sending FIN.
+2018-06-27 21:02:19.530 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NLU"" stopped.
+2018-06-27 21:02:19.530 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESH83Q5NLV"" sending FIN.
+2018-06-27 21:02:19.530 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NLV"" stopped.
+2018-06-27 21:02:19.813 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/  
+2018-06-27 21:02:19.890 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 21:02:19.902 -03:00 [INFO] Tnf.Settings.Internal.SettingDefinitionManager Settings definitions loaded: [Tnf.Localization.DefaultLanguageName,Tnf.Timing.TimeZone]
+2018-06-27 21:02:19.953 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 21:02:20.052 -03:00 [DBUG] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The request path "" does not match the path filter
+2018-06-27 21:02:20.260 -03:00 [DBUG] Microsoft.AspNetCore.Routing.RouteBase Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}"'.
+2018-06-27 21:02:20.301 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.ActionSelector No actions matched the current request. Route values: ["controller=Home", "action=Index"]
+2018-06-27 21:02:20.301 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.MvcRouteHandler No actions matched the current request. Route values: ["controller=Home", "action=Index"]
+2018-06-27 21:02:20.301 -03:00 [DBUG] Microsoft.AspNetCore.Builder.RouterMiddleware Request did not match any routes.
+2018-06-27 21:02:20.472 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NM1"" completed keep alive response.
+2018-06-27 21:02:20.473 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 667.2823ms 302 
+2018-06-27 21:02:20.485 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESH83Q5NM1"" received FIN.
+2018-06-27 21:02:20.485 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NM1"" disconnecting.
+2018-06-27 21:02:20.485 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESH83Q5NM1"" sending FIN.
+2018-06-27 21:02:20.485 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NM3"" started.
+2018-06-27 21:02:20.487 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2018-06-27 21:02:20.488 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 21:02:20.490 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 21:02:20.533 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NM3"" completed keep alive response.
+2018-06-27 21:02:20.533 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 46.2948ms 301 
+2018-06-27 21:02:20.687 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NM1"" stopped.
+2018-06-27 21:02:20.688 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/  
+2018-06-27 21:02:20.688 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 21:02:20.688 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 21:02:20.711 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NM3"" completed keep alive response.
+2018-06-27 21:02:20.713 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 23.7899ms 200 text/html
+2018-06-27 21:02:20.736 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NM4"" started.
+2018-06-27 21:02:20.738 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NM5"" started.
+2018-06-27 21:02:20.739 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2018-06-27 21:02:20.739 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 21:02:20.739 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 21:02:20.739 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2018-06-27 21:02:20.739 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 21:02:20.739 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 21:02:20.740 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2018-06-27 21:02:20.740 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 21:02:20.740 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 21:02:20.744 -03:00 [INFO] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2018-06-27 21:02:20.764 -03:00 [INFO] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The file "/swagger-ui-bundle.js" was not modified
+2018-06-27 21:02:20.764 -03:00 [INFO] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The file "/swagger-ui-standalone-preset.js" was not modified
+2018-06-27 21:02:20.772 -03:00 [DBUG] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Handled. Status code: 304 File: "/swagger-ui-bundle.js"
+2018-06-27 21:02:20.772 -03:00 [DBUG] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Handled. Status code: 304 File: "/swagger-ui-standalone-preset.js"
+2018-06-27 21:02:20.772 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NM3"" completed keep alive response.
+2018-06-27 21:02:20.772 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NM5"" completed keep alive response.
+2018-06-27 21:02:20.772 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 34.5899ms 304 application/javascript
+2018-06-27 21:02:20.772 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 32.7476ms 304 application/javascript
+2018-06-27 21:02:20.975 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESH83Q5NM4"" completed keep alive response.
+2018-06-27 21:02:20.975 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 235.9026ms 200 text/css
+2018-06-27 21:02:21.893 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.js2018-06-27 21:03:23.494 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Infrastructure An 'IServiceProvider' was created for internal use by Entity Framework.
+2018-06-27 21:03:23.747 -03:00 [INFO] Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core "2.0.2-rtm-10011" initialized '"SqlServerCrudDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled "
+2018-06-27 21:03:23.843 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Migrations Migrating using database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:23.850 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:23.929 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Hosting starting
+2018-06-27 21:03:24.033 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Hosting started
+2018-06-27 21:03:24.034 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Loaded hosting startup assembly "KDSApi.Web"
+2018-06-27 21:03:24.034 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Loaded hosting startup assembly "Microsoft.AspNetCore.ApplicationInsights.HostingStartup"
+2018-06-27 21:03:24.054 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.054 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.054 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.086 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.087 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.095 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESHA8HLPOF"" started.
+2018-06-27 21:03:24.095 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESHA8HLPOG"" started.
+2018-06-27 21:03:24.101 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-27 21:03:24.129 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESHA8HLPOF"" received FIN.
+2018-06-27 21:03:24.129 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESHA8HLPOG"" received FIN.
+2018-06-27 21:03:24.129 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESHA8HLPOG"" disconnecting.
+2018-06-27 21:03:24.129 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESHA8HLPOF"" disconnecting.
+2018-06-27 21:03:24.130 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESHA8HLPOG"" sending FIN.
+2018-06-27 21:03:24.130 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESHA8HLPOF"" sending FIN.
+2018-06-27 21:03:24.133 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-27 21:03:24.134 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.134 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.135 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.135 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.135 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.135 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.135 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESHA8HLPOG"" stopped.
+2018-06-27 21:03:24.135 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESHA8HLPOF"" stopped.
+2018-06-27 21:03:24.257 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.257 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.257 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);"
+2018-06-27 21:03:24.267 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);"
+2018-06-27 21:03:24.267 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.267 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.267 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.267 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.267 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.267 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.267 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.268 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.268 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-27 21:03:24.269 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-27 21:03:24.269 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.269 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.270 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.270 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.270 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-27 21:03:24.272 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-27 21:03:24.272 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command A data reader was disposed.
+2018-06-27 21:03:24.272 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.272 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.279 -03:00 [INFO] Microsoft.EntityFrameworkCore.Migrations Applying migration '"20180420133736_CreateDatabase"'.
+2018-06-27 21:03:24.297 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.298 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.300 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Transaction Beginning transaction with isolation level '"ReadCommitted"'.
+2018-06-27 21:03:24.300 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Customers] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Customers] PRIMARY KEY ([Id])
+);"
+2018-06-27 21:03:24.302 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Customers] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Customers] PRIMARY KEY ([Id])
+);"
+2018-06-27 21:03:24.303 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Products] (
+    [Id] uniqueidentifier NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [Value] real NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([Id])
+);"
+2018-06-27 21:03:24.304 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Products] (
+    [Id] uniqueidentifier NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [Value] real NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([Id])
+);"
+2018-06-27 21:03:24.304 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20180420133736_CreateDatabase', N'2.0.2-rtm-10011');"
+2018-06-27 21:03:24.305 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20180420133736_CreateDatabase', N'2.0.2-rtm-10011');"
+2018-06-27 21:03:24.306 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Transaction Committing transaction.
+2018-06-27 21:03:24.306 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Transaction Disposing transaction.
+2018-06-27 21:03:24.306 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:24.306 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:03:25.328 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESHA8HLPOH"" started.
+2018-06-27 21:03:25.374 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESHA8HLPOI"" started.
+2018-06-27 21:03:25.546 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESHA8HLPOJ"" started.
+2018-06-27 21:03:25.662 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESHA8HLPOK"" started.
+2018-06-27 21:03:25.843 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/  
+2018-06-27 21:03:25.910 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 21:03:25.929 -03:00 [INFO] Tnf.Settings.Internal.SettingDefinitionManager Settings definitions loaded: [Tnf.Localization.DefaultLanguageName,Tnf.Timing.TimeZone]
+2018-06-27 21:03:25.947 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 21:03:25.980 -03:00 [DBUG] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The request path "" does not match the path filter
+2018-06-27 21:03:26.043 -03:00 [DBUG] Microsoft.AspNetCore.Routing.RouteBase Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}"'.
+2018-06-27 21:03:26.057 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.ActionSelector No actions matched the current request. Route values: ["controller=Home", "action=Index"]
+2018-06-27 21:03:26.058 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.MvcRouteHandler No actions matched the current request. Route values: ["controller=Home", "action=Index"]
+2018-06-27 21:03:26.058 -03:00 [DBUG] Microsoft.AspNetCore.Builder.RouterMiddleware Request did not match any routes.
+2018-06-27 21:03:26.158 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESHA8HLPOH"" completed keep alive response.
+2018-06-27 21:03:26.158 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 324.2385ms 302 
+2018-06-27 21:03:26.220 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/  
+2018-06-27 21:03:26.222 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 21:03:26.223 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 21:03:26.255 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESHA8HLPOH"" completed keep alive response.
+2018-06-27 21:03:26.256 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 35.9336ms 200 text/html
+2018-06-27 21:03:26.278 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2018-06-27 21:03:26.278 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 21:03:26.278 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 21:03:26.283 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2018-06-27 21:03:26.283 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 21:03:26.285 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 21:03:26.289 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2018-06-27 21:03:26.289 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 21:03:26.289 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 21:03:26.307 -03:00 [INFO] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The file "/swagger-ui-bundle.js" was not modified
+2018-06-27 21:03:26.307 -03:00 [INFO]2018-06-27 21:45:51.507 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Infrastructure An 'IServiceProvider' was created for internal use by Entity Framework.
+2018-06-27 21:45:51.810 -03:00 [INFO] Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core "2.0.2-rtm-10011" initialized '"SqlServerCrudDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled "
+2018-06-27 21:45:51.838 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Hosting starting
+2018-06-27 21:45:51.941 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Migrations Migrating using database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:51.947 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.175 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Hosting started
+2018-06-27 21:45:52.175 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Loaded hosting startup assembly "KDSApi.Web"
+2018-06-27 21:45:52.175 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Loaded hosting startup assembly "Microsoft.AspNetCore.ApplicationInsights.HostingStartup"
+2018-06-27 21:45:52.252 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.252 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.253 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.254 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.255 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.261 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-27 21:45:52.273 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-27 21:45:52.273 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.273 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.274 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.274 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.274 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.274 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.274 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.274 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.274 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-27 21:45:52.276 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-27 21:45:52.276 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.276 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.280 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.280 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.280 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-27 21:45:52.281 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-27 21:45:52.282 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command A data reader was disposed.
+2018-06-27 21:45:52.282 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.282 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-27 21:45:52.289 -03:00 [INFO] Microsoft.EntityFrameworkCore.Migrations No migrations were applied. The database is already up to date.
+2018-06-27 21:45:52.494 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESI2012VTC"" started.
+2018-06-27 21:45:52.494 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESI2012VTB"" started.
+2018-06-27 21:45:52.545 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESI2012VTC"" received FIN.
+2018-06-27 21:45:52.545 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESI2012VTB"" received FIN.
+2018-06-27 21:45:52.545 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESI2012VTC"" disconnecting.
+2018-06-27 21:45:52.545 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESI2012VTB"" disconnecting.
+2018-06-27 21:45:52.547 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESI2012VTC"" sending FIN.
+2018-06-27 21:45:52.549 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESI2012VTB"" sending FIN.
+2018-06-27 21:45:52.551 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESI2012VTC"" stopped.
+2018-06-27 21:45:52.551 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESI2012VTB"" stopped.
+2018-06-27 21:45:54.761 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESI2012VTD"" started.
+2018-06-27 21:45:54.782 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESI2012VTE"" started.
+2018-06-27 21:45:54.793 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESI2012VTF"" started.
+2018-06-27 21:45:54.982 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESI2012VTG"" started.
+2018-06-27 21:45:55.249 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/  
+2018-06-27 21:45:55.302 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 21:45:55.319 -03:00 [INFO] Tnf.Settings.Internal.SettingDefinitionManager Settings definitions loaded: [Tnf.Localization.DefaultLanguageName,Tnf.Timing.TimeZone]
+2018-06-27 21:45:55.339 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 21:45:55.384 -03:00 [DBUG] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The request path "" does not match the path filter
+2018-06-27 21:45:55.479 -03:00 [DBUG] Microsoft.AspNetCore.Routing.RouteBase Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}"'.
+2018-06-27 21:45:55.502 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.ActionSelector No actions matched the current request. Route values: ["controller=Home", "action=Index"]
+2018-06-27 21:45:55.503 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.MvcRouteHandler No actions matched the current request. Route values: ["controller=Home", "action=Index"]
+2018-06-27 21:45:55.504 -03:00 [DBUG] Microsoft.AspNetCore.Builder.RouterMiddleware Request did not match any routes.
+2018-06-27 21:45:55.637 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESI2012VTD"" completed keep alive response.
+2018-06-27 21:45:55.639 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 397.6522ms 302 
+2018-06-27 21:45:55.749 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/  
+2018-06-27 21:45:55.750 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 21:45:55.750 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 21:45:55.819 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESI2012VTD"" completed keep alive response.
+2018-06-27 21:45:55.819 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 69.8124ms 200 text/html
+2018-06-27 21:45:55.860 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2018-06-27 21:45:55.860 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2018-06-27 21:45:55.861 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 21:45:55.861 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 21:45:55.861 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 21:45:55.861 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 21:45:55.871 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2018-06-27 21:45:55.871 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-27 21:45:55.871 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-27 21:45:55.919 -03:00 [INFO] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The file "/swagger-ui-bundle.js" was not modified
+2018-06-27 21:45:55.919 -03:00 [INFO] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The file "/swagger-ui.css" was not modified
+2018-06-27 21:45:55.919 -03:00 [INFO] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The file "/swagger-ui-standalone-preset.js" was not modified
+2018-06-27 21:45:55.926 -03:00 [DBUG] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Handled. Status code: 304 File: "/swagger-ui-standalone-preset.js"
+2018-06-27 21:45:55.926 -03:00 [DBUG] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Handled. Status code: 304 File: "/swagger-ui.css"
+2018-06-27 21:45:55.926 -03:00 [DBUG] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Handled. Status code: 304 File: "/swagger-ui-bundle.js"
+2018-06-27 21:45:55.926 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESI2012VTE"" completed keep alive response.
+2018-06-27 21:45:55.926 -03:00 [DBUG]
