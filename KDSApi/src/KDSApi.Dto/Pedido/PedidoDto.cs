@@ -11,6 +11,7 @@ namespace KDSApi.Dto.Pedido
     {
         [Key]
         public int IdPedido { get; set; }
+
         public int IdComanda { get; set; }
 
         [StringLength(50)]

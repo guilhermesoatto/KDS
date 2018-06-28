@@ -1,0 +1,867 @@
+2018-06-28 10:22:21.758 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Infrastructure An 'IServiceProvider' was created for internal use by Entity Framework.
+2018-06-28 10:22:23.151 -03:00 [INFO] Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core "2.0.2-rtm-10011" initialized '"SqlServerCrudDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled "
+2018-06-28 10:22:24.013 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Hosting starting
+2018-06-28 10:22:24.505 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Migrations Migrating using database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:24.565 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:25.915 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Hosting started
+2018-06-28 10:22:25.916 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Loaded hosting startup assembly "KDSApi.Web"
+2018-06-28 10:22:25.916 -03:00 [DBUG] Microsoft.AspNetCore.Hosting.Internal.WebHost Loaded hosting startup assembly "Microsoft.AspNetCore.ApplicationInsights.HostingStartup"
+2018-06-28 10:22:25.988 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R42"" started.
+2018-06-28 10:22:25.988 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R41"" started.
+2018-06-28 10:22:26.110 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESV8OB1R42"" received FIN.
+2018-06-28 10:22:26.110 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R42"" disconnecting.
+2018-06-28 10:22:26.110 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESV8OB1R41"" received FIN.
+2018-06-28 10:22:26.110 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R41"" disconnecting.
+2018-06-28 10:22:26.111 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESV8OB1R41"" sending FIN.
+2018-06-28 10:22:26.114 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R41"" stopped.
+2018-06-28 10:22:26.114 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESV8OB1R42"" sending FIN.
+2018-06-28 10:22:26.119 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R42"" stopped.
+2018-06-28 10:22:27.605 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.605 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.606 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.608 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.609 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.682 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-28 10:22:27.781 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("154"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-28 10:22:27.781 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.781 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.782 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.782 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.782 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.782 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.782 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.782 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.782 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-28 10:22:27.784 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-28 10:22:27.784 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.784 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.874 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.874 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.874 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-28 10:22:27.894 -03:00 [INFO] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-28 10:22:27.894 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command A data reader was disposed.
+2018-06-28 10:22:27.894 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.894 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:22:27.899 -03:00 [INFO] Microsoft.EntityFrameworkCore.Migrations No migrations were applied. The database is already up to date.
+2018-06-28 10:22:35.814 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R43"" started.
+2018-06-28 10:22:35.856 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R44"" started.
+2018-06-28 10:22:35.856 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R45"" started.
+2018-06-28 10:22:35.869 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R46"" started.
+2018-06-28 10:22:35.985 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R47"" started.
+2018-06-28 10:22:36.646 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/  
+2018-06-28 10:22:36.695 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-28 10:22:36.709 -03:00 [INFO] Tnf.Settings.Internal.SettingDefinitionManager Settings definitions loaded: [Tnf.Localization.DefaultLanguageName,Tnf.Timing.TimeZone]
+2018-06-28 10:22:36.733 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-28 10:22:36.832 -03:00 [DBUG] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The request path "" does not match the path filter
+2018-06-28 10:22:37.232 -03:00 [DBUG] Microsoft.AspNetCore.Routing.RouteBase Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}"'.
+2018-06-28 10:22:37.271 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.ActionSelector No actions matched the current request. Route values: ["controller=Home", "action=Index"]
+2018-06-28 10:22:37.272 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.MvcRouteHandler No actions matched the current request. Route values: ["controller=Home", "action=Index"]
+2018-06-28 10:22:37.272 -03:00 [DBUG] Microsoft.AspNetCore.Builder.RouterMiddleware Request did not match any routes.
+2018-06-28 10:22:37.442 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R43"" completed keep alive response.
+2018-06-28 10:22:37.443 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 801.5653ms 302 
+2018-06-28 10:22:37.953 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/  
+2018-06-28 10:22:37.953 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-28 10:22:37.953 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-28 10:22:38.016 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R43"" completed keep alive response.
+2018-06-28 10:22:38.017 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 64.1336ms 200 text/html
+2018-06-28 10:22:38.055 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2018-06-28 10:22:38.055 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-28 10:22:38.055 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-28 10:22:38.075 -03:00 [INFO] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The file "/swagger-ui.css" was not modified
+2018-06-28 10:22:38.082 -03:00 [DBUG] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Handled. Status code: 304 File: "/swagger-ui.css"
+2018-06-28 10:22:38.083 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R43"" completed keep alive response.
+2018-06-28 10:22:38.083 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 27.6867ms 304 text/css
+2018-06-28 10:22:38.104 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2018-06-28 10:22:38.105 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-28 10:22:38.105 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-28 10:22:38.107 -03:00 [INFO] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The file "/swagger-ui-standalone-preset.js" was not modified
+2018-06-28 10:22:38.107 -03:00 [DBUG] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Handled. Status code: 304 File: "/swagger-ui-standalone-preset.js"
+2018-06-28 10:22:38.107 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R46"" completed keep alive response.
+2018-06-28 10:22:38.108 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 3.189ms 304 application/javascript
+2018-06-28 10:22:38.111 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2018-06-28 10:22:38.111 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-28 10:22:38.111 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-28 10:22:38.112 -03:00 [INFO] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The file "/swagger-ui-bundle.js" was not modified
+2018-06-28 10:22:38.112 -03:00 [DBUG] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Handled. Status code: 304 File: "/swagger-ui-bundle.js"
+2018-06-28 10:22:38.112 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R43"" completed keep alive response.
+2018-06-28 10:22:38.112 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 0.5345ms 304 application/javascript
+2018-06-28 10:22:39.203 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2018-06-28 10:22:39.203 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-28 10:22:39.203 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-28 10:22:40.079 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R43"" completed keep alive response.
+2018-06-28 10:22:40.079 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 876.5793ms 200 application/json
+2018-06-28 10:25:12.147 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESV8OB1R44"" received FIN.
+2018-06-28 10:25:12.149 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R44"" disconnecting.
+2018-06-28 10:25:12.149 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESV8OB1R47"" received FIN.
+2018-06-28 10:25:12.149 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R47"" disconnecting.
+2018-06-28 10:25:12.149 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESV8OB1R45"" received FIN.
+2018-06-28 10:25:12.149 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R45"" disconnecting.
+2018-06-28 10:25:12.149 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESV8OB1R44"" sending FIN.
+2018-06-28 10:25:12.149 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESV8OB1R47"" sending FIN.
+2018-06-28 10:25:12.149 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESV8OB1R45"" sending FIN.
+2018-06-28 10:25:12.149 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R45"" stopped.
+2018-06-28 10:25:12.149 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R44"" stopped.
+2018-06-28 10:25:12.149 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R47"" stopped.
+2018-06-28 10:26:02.341 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/api/Comanda  
+2018-06-28 10:26:02.342 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-28 10:26:02.342 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-28 10:26:02.342 -03:00 [DBUG] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The request path "" does not match the path filter
+2018-06-28 10:26:02.343 -03:00 [DBUG] Microsoft.AspNetCore.Routing.Tree.TreeRouter Request successfully matched the route with name 'null' and template '"api/Comanda"'.
+2018-06-28 10:26:02.365 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.ActionSelector Action '"KDSApi.Web.Controllers.ComandaController.PostComanda (KDSApi.Web)"' with id '"532bebbd-20d9-4814-876c-6513d5f7a73e"' did not match the constraint '"Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint"'
+2018-06-28 10:26:02.413 -03:00 [INFO] Tnf.Localization.Internal.LocalizationManager Initializing 2 localization sources.
+2018-06-28 10:26:02.499 -03:00 [INFO] Tnf.Localization.Internal.LocalizationManager Initialized localization source: KDSApi
+2018-06-28 10:26:02.500 -03:00 [INFO] Tnf.Localization.Internal.LocalizationManager Initialized localization source: Tnf
+2018-06-28 10:26:02.638 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker Executing action "KDSApi.Web.Controllers.ComandaController.GetComanda (KDSApi.Web)"
+2018-06-28 10:26:02.646 -03:00 [DBUG] Tnf.AspNetCore.Mvc.Authorization.TnfAuthorizationFilter Check if method System.Collections.Generic.IEnumerable`1[KDSApi.Domain.Entities.Comanda] GetComanda() requires authorization
+2018-06-28 10:26:02.646 -03:00 [DBUG] Tnf.AspNetCore.Mvc.Authorization.TnfAuthorizationFilter Not required
+2018-06-28 10:26:02.697 -03:00 [INFO] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker Executing action method "KDSApi.Web.Controllers.ComandaController.GetComanda (KDSApi.Web)" with arguments (null) - ModelState is Valid
+2018-06-28 10:26:02.698 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker Executed action method "KDSApi.Web.Controllers.ComandaController.GetComanda (KDSApi.Web)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult".
+2018-06-28 10:26:02.705 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2018-06-28 10:26:02.705 -03:00 [INFO] Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-06-28 10:26:02.731 -03:00 [INFO] Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core "2.0.2-rtm-10011" initialized '"SqlServerCrudDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled "
+2018-06-28 10:26:02.865 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Query Compiling query model: "
+"'"from Comanda <generated>_0 in DbSet<Comanda>
+select [<generated>_0]"'
+2018-06-28 10:26:02.900 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Query Optimized query model: "
+"'"from Comanda <generated>_0 in DbSet<Comanda>
+select [<generated>_0]"'
+2018-06-28 10:26:02.950 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Query "(QueryContext queryContext) => IEnumerable<Comanda> _InterceptExceptions(
+    source: IEnumerable<Comanda> _TrackEntities(
+        results: IEnumerable<Comanda> _ShapedQuery(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT [c].[IdComanda], [c].[Id], [c].[NumeroComanda]
+                FROM [Comanda] AS [c], 
+            shaper: UnbufferedEntityShaper<Comanda>), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: Comanda }, 
+        entityAccessors: List<Func<Comanda, object>> 
+        { 
+            Func<Comanda, Comanda>, 
+        }
+    ), 
+    contextType: KDSApi.Infra.SqlServer.Context.SqlServerCrudDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-28 10:26:02.955 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:26:02.955 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:26:03.013 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[IdComanda], [c].[Id], [c].[NumeroComanda]
+FROM [Comanda] AS [c]"
+2018-06-28 10:26:03.097 -03:00 [EROR] Microsoft.EntityFrameworkCore.Database.Command Failed executing DbCommand ("83"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[IdComanda], [c].[Id], [c].[NumeroComanda]
+FROM [Comanda] AS [c]"
+System.Data.SqlClient.SqlException (0x80131904): Nome de coluna 'Id' inválido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.<WriteResponseBodyAsync>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<ProcessRequestsAsync>d__2.MoveNext()
+ClientConnectionId:d9545ee5-a8ae-434a-a1b1-081da147a02f
+Error Number:207,State:1,Class:16
+2018-06-28 10:26:03.355 -03:00 [EROR] Microsoft.EntityFrameworkCore.Query An exception occurred in the database while iterating the results of a query for context type '"KDSApi.Infra.SqlServer.Context.SqlServerCrudDbContext"'."
+""System.Data.SqlClient.SqlException (0x80131904): Nome de coluna 'Id' inválido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:d9545ee5-a8ae-434a-a1b1-081da147a02f
+Error Number:207,State:1,Class:16"
+System.Data.SqlClient.SqlException (0x80131904): Nome de coluna 'Id' inválido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.<WriteResponseBodyAsync>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<ProcessRequestsAsync>d__2.MoveNext()
+ClientConnectionId:d9545ee5-a8ae-434a-a1b1-081da147a02f
+Error Number:207,State:1,Class:16
+2018-06-28 10:26:03.393 -03:00 [INFO] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker Executed action "KDSApi.Web.Controllers.ComandaController.GetComanda (KDSApi.Web)" in 751.7261ms
+2018-06-28 10:26:03.395 -03:00 [EROR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request
+System.Data.SqlClient.SqlException (0x80131904): Nome de coluna 'Id' inválido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.<WriteResponseBodyAsync>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<ProcessRequestsAsync>d__2.MoveNext()
+ClientConnectionId:d9545ee5-a8ae-434a-a1b1-081da147a02f
+Error Number:207,State:1,Class:16
+2018-06-28 10:26:03.395 -03:00 [WARN] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware The response has already started, the error page middleware will not be executed.
+2018-06-28 10:26:03.406 -03:00 [EROR] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R43"", Request id ""0HLESV8OB1R43:00000006"": An unhandled exception was thrown by the application.
+System.Data.SqlClient.SqlException (0x80131904): Nome de coluna 'Id' inválido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.<WriteResponseBodyAsync>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<ProcessRequestsAsync>d__2.MoveNext()
+ClientConnectionId:d9545ee5-a8ae-434a-a1b1-081da147a02f
+Error Number:207,State:1,Class:16
+2018-06-28 10:26:03.406 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request finished in 1064.415ms 200 application/json; charset=utf-8
+2018-06-28 10:26:03.523 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R43"" disconnecting.
+2018-06-28 10:26:03.525 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv Connection id ""0HLESV8OB1R43"" sending FIN.
+2018-06-28 10:26:03.527 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R43"" stopped.
+2018-06-28 10:26:20.814 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R48"" started.
+2018-06-28 10:26:20.822 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R49"" started.
+2018-06-28 10:26:20.822 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R4A"" started.
+2018-06-28 10:26:20.823 -03:00 [DBUG] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R4B"" started.
+2018-06-28 10:26:20.823 -03:00 [INFO] Microsoft.AspNetCore.Hosting.Internal.WebHost Request starting HTTP/1.1 GET http://localhost:5000/api/Comanda  
+2018-06-28 10:26:20.823 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfUserRequestCultureProvider TnfSession.UserId == null
+2018-06-28 10:26:20.823 -03:00 [DBUG] Tnf.AspNetCore.Localization.TnfDefaultRequestCultureProvider Default culture get from SettingManager: pt-BR
+2018-06-28 10:26:20.824 -03:00 [DBUG] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The request path "" does not match the path filter
+2018-06-28 10:26:20.824 -03:00 [DBUG] Microsoft.AspNetCore.Routing.Tree.TreeRouter Request successfully matched the route with name 'null' and template '"api/Comanda"'.
+2018-06-28 10:26:20.824 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.ActionSelector Action '"KDSApi.Web.Controllers.ComandaController.PostComanda (KDSApi.Web)"' with id '"532bebbd-20d9-4814-876c-6513d5f7a73e"' did not match the constraint '"Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint"'
+2018-06-28 10:26:20.825 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker Executing action "KDSApi.Web.Controllers.ComandaController.GetComanda (KDSApi.Web)"
+2018-06-28 10:26:20.825 -03:00 [DBUG] Tnf.AspNetCore.Mvc.Authorization.TnfAuthorizationFilter Check if method System.Collections.Generic.IEnumerable`1[KDSApi.Domain.Entities.Comanda] GetComanda() requires authorization
+2018-06-28 10:26:20.825 -03:00 [DBUG] Tnf.AspNetCore.Mvc.Authorization.TnfAuthorizationFilter Not required
+2018-06-28 10:26:20.826 -03:00 [INFO] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker Executing action method "KDSApi.Web.Controllers.ComandaController.GetComanda (KDSApi.Web)" with arguments (null) - ModelState is Valid
+2018-06-28 10:26:20.826 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker Executed action method "KDSApi.Web.Controllers.ComandaController.GetComanda (KDSApi.Web)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult".
+2018-06-28 10:26:20.828 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor No information found on request to perform content negotiation.
+2018-06-28 10:26:20.828 -03:00 [DBUG] Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2018-06-28 10:26:20.828 -03:00 [INFO] Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-06-28 10:26:20.857 -03:00 [INFO] Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core "2.0.2-rtm-10011" initialized '"SqlServerCrudDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled "
+2018-06-28 10:26:20.861 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:26:20.861 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database '"KDS"' on server '".\SQLEXPRESS"'.
+2018-06-28 10:26:20.863 -03:00 [DBUG] Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[IdComanda], [c].[Id], [c].[NumeroComanda]
+FROM [Comanda] AS [c]"
+2018-06-28 10:26:20.880 -03:00 [EROR] Microsoft.EntityFrameworkCore.Database.Command Failed executing DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[IdComanda], [c].[Id], [c].[NumeroComanda]
+FROM [Comanda] AS [c]"
+System.Data.SqlClient.SqlException (0x80131904): Nome de coluna 'Id' inválido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.<WriteResponseBodyAsync>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<ProcessRequestsAsync>d__2.MoveNext()
+ClientConnectionId:d9545ee5-a8ae-434a-a1b1-081da147a02f
+Error Number:207,State:1,Class:16
+2018-06-28 10:26:20.946 -03:00 [EROR] Microsoft.EntityFrameworkCore.Query An exception occurred in the database while iterating the results of a query for context type '"KDSApi.Infra.SqlServer.Context.SqlServerCrudDbContext"'."
+""System.Data.SqlClient.SqlException (0x80131904): Nome de coluna 'Id' inválido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:d9545ee5-a8ae-434a-a1b1-081da147a02f
+Error Number:207,State:1,Class:16"
+System.Data.SqlClient.SqlException (0x80131904): Nome de coluna 'Id' inválido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.<WriteResponseBodyAsync>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<ProcessRequestsAsync>d__2.MoveNext()
+ClientConnectionId:d9545ee5-a8ae-434a-a1b1-081da147a02f
+Error Number:207,State:1,Class:16
+2018-06-28 10:26:20.972 -03:00 [INFO] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker Executed action "KDSApi.Web.Controllers.ComandaController.GetComanda (KDSApi.Web)" in 146.8304ms
+2018-06-28 10:26:20.976 -03:00 [EROR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request
+System.Data.SqlClient.SqlException (0x80131904): Nome de coluna 'Id' inválido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.<WriteResponseBodyAsync>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<ProcessRequestsAsync>d__2.MoveNext()
+ClientConnectionId:d9545ee5-a8ae-434a-a1b1-081da147a02f
+Error Number:207,State:1,Class:16
+2018-06-28 10:26:20.976 -03:00 [WARN] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware The response has already started, the error page middleware will not be executed.
+2018-06-28 10:26:21.026 -03:00 [EROR] Microsoft.AspNetCore.Server.Kestrel Connection id ""0HLESV8OB1R46"", Request id ""0HLESV8OB1R46:00000002"": An unhandled exception was thrown by the application.
+System.Data.SqlClient.SqlException (0x80131904): Nome de coluna 'Id' inválido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.<WriteResponseBodyAsync>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where excep

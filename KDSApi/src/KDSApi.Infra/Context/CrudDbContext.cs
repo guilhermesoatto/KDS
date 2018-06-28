@@ -14,6 +14,10 @@ namespace KDSApi.Infra.Context
 
         public DbSet<Comanda> Comanda { get; set; }
 
+        public DbSet<Pedido> Pedido { get; set; }
+
+        //public DbSet<Status> Status { get; set; }
+
         // Importante o construtor do contexto receber as opções com o tipo generico definido: DbContextOptions<TDbContext>
         public CrudDbContext(DbContextOptions<CrudDbContext> options, ITnfSession session)
             : base(options, session)

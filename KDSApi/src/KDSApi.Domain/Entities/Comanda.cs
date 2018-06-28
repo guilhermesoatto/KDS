@@ -7,10 +7,12 @@ namespace KDSApi.Domain.Entities
 {
     public partial class Comanda : IEntity
     {
-        public int IdComanda { get; set; }
-        public string NumeroComanda { get; set; }
 
         public Guid Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public int IdComanda { get; set; }
+        public string NumeroComanda { get; set; }
+        
 
         public static Builder Create(INotificationHandler handler)
             => new Builder(handler);
