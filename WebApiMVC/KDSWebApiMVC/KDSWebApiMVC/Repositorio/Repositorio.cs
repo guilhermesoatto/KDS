@@ -148,8 +148,34 @@ namespace KDSWebApiMVC.Repositorio
 
         public Comanda InserePedido(Comanda comanda)
         {
+
+            Comanda gravaComanda = new Comanda();
+
+            gravaComanda.NumeroComanda = comanda.NumeroComanda;
+            db.Comanda.Add(gravaComanda);
+            db.SaveChanges();
+
+
+
+
+            Pedido gravaPedido = new Pedido();
+
+            gravaPedido.IdComanda = gravaComanda.IdComanda;
+            gravaPedido.CanalAtendimento = comanda.Pedidos.FirstOrDefault().CanalAtendimento;
+            gravaPedido.CodigoPedido = GeraCodigoPedido();
+            gravaPedido.StatusAtualPedido = "PREPARAR";
+            //gravaPedido
+            
+
+            comanda.success = true;
             return null;
         }
+
+        private int GeraCodigoPedido()
+        {
+            return DateTime.Now.Minute;
+        }
+
         #endregion
 
         #region LISTAGEM

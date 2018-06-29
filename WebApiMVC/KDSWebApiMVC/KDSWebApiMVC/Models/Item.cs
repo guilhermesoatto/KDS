@@ -7,7 +7,7 @@ using System.Web;
 
 namespace KDSWebApiMVC.Models
 {
-    [Table("dbo.item")]
+    [Table("dbo.Item")]
     public class Item
     {
         [Key]

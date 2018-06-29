@@ -26,5 +26,10 @@ namespace KDSWebApiMVC.Services
             return reposito.AlteraStatusPedido(pedido, idStatus);
         }
 
+        public Comanda InserePedido(Comanda comanda)
+        {
+            return reposito.InserePedido(comanda);
+        }
+
     }
 }

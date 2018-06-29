@@ -70,6 +70,12 @@ namespace KDSWebApiMVC.Controllers
         public HttpResponseMessage NovoPedido(Comanda comanda)
         {
             var a = Request.Content.GetType();
+
+            if (servicos.InserePedido(comanda) == null)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest);
+            }
+
             return Request.CreateResponse(HttpStatusCode.OK);
         }
 
