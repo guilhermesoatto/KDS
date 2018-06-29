@@ -14,5 +14,9 @@ namespace KDSWebApiMVC.Models
         public int IdComanda { get; set; }
         [StringLength(50)]
         public string NumeroComanda { get; set; }
+
+        public List<Pedido> Pedidos { get; set; }
     }
+
+
 }

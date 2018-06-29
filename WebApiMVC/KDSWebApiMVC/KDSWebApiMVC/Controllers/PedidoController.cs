@@ -65,6 +65,14 @@ namespace KDSWebApiMVC.Controllers
 
         }
 
+        [Route("api/Pedido/NovoPedido")]
+        [HttpPost]
+        public HttpResponseMessage NovoPedido(Comanda comanda)
+        {
+            var a = Request.Content.GetType();
+            return Request.CreateResponse(HttpStatusCode.OK);
+        }
+
         // PUT: api/Pedido/5
         //[ResponseType(typeof(void))]
         //public IHttpActionResult PutPedido(int id, int idStatus, string statusAtual, Pedido pedido)

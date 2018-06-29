@@ -28,5 +28,8 @@ namespace KDSWebApiMVC.Models
         public string Observacao { get; set; }
         public DateTime DataHoraInclusao { get; set; }
         public int TempoMedioPreparacaoEmMinutos { get; set; }
+
+        public List<ItemAdicional> AdicionaisItem { get; set; }
+        public List<ItemAdicional> InsumoItem { get; set; }
     }
 }

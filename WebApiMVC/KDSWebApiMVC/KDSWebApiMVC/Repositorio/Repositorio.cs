@@ -146,6 +146,10 @@ namespace KDSWebApiMVC.Repositorio
             return true;
         }
 
+        public Comanda InserePedido(Comanda comanda)
+        {
+            return null;
+        }
         #endregion
 
         #region LISTAGEM
