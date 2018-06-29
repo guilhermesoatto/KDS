@@ -8,14 +8,43 @@ namespace KDSWebApiMVC.Services
 {
     public class Servicos
     {
-        private Repositorio.Repositorio reposito = new Repositorio.Repositorio();
+        private Repositorio.Repositorio repositorio = new Repositorio.Repositorio();
 
-        public List<Pedido> GetPedido()
+       /// <summary>
+        /// Retorna todos os pedidos e seus itens
+        /// </summary>
+        /// <returns></returns>
+        public List<Pedido> RetornaPedidos()
         {
-            return reposito.RetornaPedidos();
+            var pedidos = repositorio.RetornaPedidos().ToList();
+            var listaPedido = new List<Pedido>();
+            if (pedidos.Count > 0)
+            {
+                foreach (Pedido item in pedidos)
+                {
+                    listaPedido.Add(repositorio.PegaItensPorPedido(pedidos.Find(x => x.IdPedido == item.IdPedido)));
+                }
+            }
+            return listaPedido;
         }
 
-        public bool AlteraStatusItem(int idPedido, int idItem, int idStatus)
+        public Pedido PreencheItensPorPedido(Pedido pedido)
+        {
+            return repositorio.PegaItensPorPedido(pedido);
+        }
+        public List<Comanda> RetornaComandas()
+        {
+            var comandas = repositorio.RetornaComandas().ToList();
+            foreach (var comanda in comandas)
+            {
+                comanda.success = true;
+                comanda.Pedidos = new List<Pedido>();
+                comanda.Pedidos = RetornaPedidos().FindAll(x => x.IdComanda == comanda.IdComanda);
+            }
+            return comandas.ToList();
+        }
+		
+		public bool AlteraStatusItem(int idPedido, int idItem, int idStatus)
         {
             return reposito.AlteraStatusItem(idPedido, idItem, idStatus);
         }
@@ -25,6 +54,5 @@ namespace KDSWebApiMVC.Services
             var pedido = GetPedido().FirstOrDefault(x => x.IdPedido == idPedido);
             return reposito.AlteraStatusPedido(pedido, idStatus);
         }
-
     }
 }

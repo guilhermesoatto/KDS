@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Web;
 
 namespace KDSWebApiMVC.Models
 {
-    [Table("Comanda")]
+    [Table("dbo.Comanda")]
     public class Comanda
     {
         [Key]
@@ -16,6 +13,11 @@ namespace KDSWebApiMVC.Models
         public string NumeroComanda { get; set; }
 
         public List<Pedido> Pedidos { get; set; }
+
+
+        [NotMapped]
+        public bool success { get; set; }
+
     }
 
 
