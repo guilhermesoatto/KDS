@@ -37,40 +37,46 @@ namespace KDSWebApiMVC.Controllers
             return Ok(pedido);
         }
 
-        // PUT: api/Pedido/5
-        [ResponseType(typeof(void))]
-        public IHttpActionResult PutPedido(int id, Pedido pedido)
+        // PUT: api/Pedido/5/item/50/AlteraStatusItem/2
+        [Route("api/Pedido/{idPedido}/item/{idItem}/AlteraStatusItem/{idStatus}")]
+        [HttpPut]
+        public IHttpActionResult AlteraStatusItem(int idPedido, int idItem, int idStatus)
         {
-            if (!ModelState.IsValid)
+            if (servicos.AlteraStatusItem(idPedido, idItem, idStatus) == false)
             {
-                return BadRequest(ModelState);
+                return StatusCode(HttpStatusCode.BadRequest);
             }
 
-            if (id != pedido.IdPedido)
-            {
-                return BadRequest();
-            }
+            return StatusCode(HttpStatusCode.OK);
 
-            db.Entry(pedido).State = EntityState.Modified;
-
-            try
-            {
-                db.SaveChanges();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!PedidoExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return StatusCode(HttpStatusCode.NoContent);
         }
+
+        // PUT: api/Pedido/5/AlteraStatusPedido/2
+        [Route("api/Pedido/{idPedido}/AlteraStatusPedido/{idStatus}")]
+        [HttpPut]
+        public IHttpActionResult AlteraStatusPedido(int idPedido, int idStatus)
+        {
+            if (servicos.AlteraStatusPedido(idPedido, idStatus) == false)
+            {
+                return StatusCode(HttpStatusCode.BadRequest);
+            }
+
+            return StatusCode(HttpStatusCode.OK);
+
+        }
+
+        // PUT: api/Pedido/5
+        //[ResponseType(typeof(void))]
+        //public IHttpActionResult PutPedido(int id, int idStatus, string statusAtual, Pedido pedido)
+        //{
+        //    if (servicos.AlteraStatus(id, idStatus, statusAtual) == false)
+        //    {
+        //        return StatusCode(HttpStatusCode.BadRequest);
+        //    }
+
+        //    return StatusCode(HttpStatusCode.OK);
+
+        //}
 
         // POST: api/Pedido
         [ResponseType(typeof(Pedido))]
