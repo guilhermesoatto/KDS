@@ -11,15 +11,15 @@ namespace KDSWebApiMVC.Models
     public class ItemInsumo
     {
         [Key]
-        public int IdInsumo { get; set; }
-        public int IdItem { get; set; }
+        public int idInsumo { get; set; }
+        public int idItem { get; set; }
 
         [StringLength(50)]
-        public string ObjectId { get; set; }
+        public string objectId { get; set; }
 
         [StringLength(250)]
-        public string Descricao { get; set; }
-        public int Remover { get; set; }
-        public int Quantidade { get; set; }
+        public string descricao { get; set; }
+        public int remover { get; set; }
+        public int quantidade { get; set; }
     }
 }

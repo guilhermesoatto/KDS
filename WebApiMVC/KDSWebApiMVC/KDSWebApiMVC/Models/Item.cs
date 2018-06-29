@@ -9,26 +9,26 @@ namespace KDSWebApiMVC.Models
     public class Item
     {
         [Key]
-        public int IdItem { get; set; }
-        public int IdPedido { get; set; }
+        public int idItem { get; set; }
+        public int idPedido { get; set; }
 
         [StringLength(50)]
-        public string ObjectId { get; set; }
+        public string objectId { get; set; }
 
         [StringLength(50)]
-        public string StatusAtualItem { get; set; }
-        public int CodigoStatusAtualItem { get; set; }
+        public string statusAtualItem { get; set; }
+        public int codigoStatusAtualItem { get; set; }
 
         [StringLength(150)]
-        public string Descricao { get; set; }
+        public string descricao { get; set; }
 
         [StringLength(150)]
-        public string Observacao { get; set; }
+        public string observacao { get; set; }
         [NotMapped]
-        public DateTime DataHoraInclusao { get; set; }
-        public int TempoMedioPreparacaoEmMinutos { get; set; }
+        public DateTime dataHoraInclusao { get; set; }
+        public int tempoMedioPreparacaoEmMinutos { get; set; }
 
-        public List<ItemAdicional> AdicionaisItem { get; set; }
-        public List<ItemInsumo> InsumoItem { get; set; }
+        public List<ItemAdicional> adicionaisItem { get; set; }
+        public List<ItemInsumo> insumoItem { get; set; }
     }
 }

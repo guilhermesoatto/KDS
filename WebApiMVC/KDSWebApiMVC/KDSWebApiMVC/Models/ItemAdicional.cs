@@ -11,9 +11,9 @@ namespace KDSWebApiMVC.Models
     public class ItemAdicional
     {
         [Key]
-        public int IdAdicional { get; set; }
-        public int IdItem { get; set; }
+        public int idAdicional { get; set; }
+        public int idItem { get; set; }
         [StringLength(150)]
-        public string Descricao { get; set; }
+        public string descricao { get; set; }
     }
 }

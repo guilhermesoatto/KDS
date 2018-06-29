@@ -11,11 +11,11 @@ namespace KDSWebApiMVC.Models
     public class Historico
     {
         [Key]
-        public int IdHistorico { get; set; }
-        public int Id { get; set; }
-        public int IdStatus { get; set; }
+        public int idHistorico { get; set; }
+        public int id { get; set; }
+        public int idStatus { get; set; }
         [StringLength(50)]
-        public string Tipo { get; set; }
-        public DateTime DataHora { get; set; }
+        public string tipo { get; set; }
+        public DateTime dataHora { get; set; }
     }
 }

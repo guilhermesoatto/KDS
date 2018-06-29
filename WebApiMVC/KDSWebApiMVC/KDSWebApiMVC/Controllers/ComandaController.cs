@@ -47,7 +47,7 @@ namespace KDSWebApiMVC.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (id != comanda.IdComanda)
+            if (id != comanda.idComanda)
             {
                 return BadRequest();
             }
@@ -85,7 +85,7 @@ namespace KDSWebApiMVC.Controllers
             db.Comanda.Add(comanda);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = comanda.IdComanda }, comanda);
+            return CreatedAtRoute("DefaultApi", new { id = comanda.idComanda }, comanda);
         }
 
         // DELETE: api/Comanda/5
@@ -115,7 +115,7 @@ namespace KDSWebApiMVC.Controllers
 
         private bool ComandaExists(int id)
         {
-            return db.Comanda.Count(e => e.IdComanda == id) > 0;
+            return db.Comanda.Count(e => e.idComanda == id) > 0;
         }
     }
 }

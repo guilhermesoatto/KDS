@@ -22,7 +22,7 @@ namespace KDSWebApiMVC.Services
             {
                 foreach (Pedido item in pedidos)
                 {
-                    listaPedido.Add(repositorio.PegaItensPorPedido(pedidos.Find(x => x.IdPedido == item.IdPedido)));
+                    listaPedido.Add(repositorio.PegaItensPorPedido(pedidos.Find(x => x.idPedido == item.idPedido)));
                 }
             }
             return listaPedido;
@@ -38,8 +38,8 @@ namespace KDSWebApiMVC.Services
             foreach (var comanda in comandas)
             {
                 comanda.success = true;
-                comanda.Pedidos = new List<Pedido>();
-                comanda.Pedidos = RetornaPedidos().FindAll(x => x.IdComanda == comanda.IdComanda);
+                comanda.pedidos = new List<Pedido>();
+                comanda.pedidos = RetornaPedidos().FindAll(x => x.idComanda == comanda.idComanda);
             }
             return comandas.ToList();
         }
@@ -51,7 +51,7 @@ namespace KDSWebApiMVC.Services
 
         public bool AlteraStatusPedido(int idPedido, int idStatus)
         {
-            var pedido = RetornaPedidos().FirstOrDefault(x => x.IdPedido == idPedido);
+            var pedido = RetornaPedidos().FirstOrDefault(x => x.idPedido == idPedido);
             return repositorio.AlteraStatusPedido(pedido, idStatus);
         }
 

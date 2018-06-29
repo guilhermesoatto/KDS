@@ -11,13 +11,13 @@ namespace KDSWebApiMVC.Models
     public class Comanda
     {
         [Key]
-        public int IdComanda { get; set; }
+        public int idComanda { get; set; }
         [StringLength(50)]
-        public string NumeroComanda { get; set; }
+        public string numeroComanda { get; set; }
         [NotMapped]
-        public DateTime DataHoraInclusao { get; set; }
+        public DateTime dataHoraInclusao { get; set; }
 
-        public List<Pedido> Pedidos { get; set; }
+        public List<Pedido> pedidos { get; set; }
 
         [NotMapped]
         public bool success { get; set; }

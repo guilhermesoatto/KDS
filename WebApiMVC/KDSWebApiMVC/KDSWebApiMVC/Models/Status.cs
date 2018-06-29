@@ -11,9 +11,9 @@ namespace KDSWebApiMVC.Models
     public class Status
     {
         [Key]
-        public int IdStatus { get; set; }
+        public int idStatus { get; set; }
 
         [StringLength(50)]
-        public string Descricao { get; set; }
+        public string descricao { get; set; }
     }
 }

@@ -11,24 +11,24 @@ namespace KDSWebApiMVC.Models
     public class Pedido
     {
         [Key]
-        public int IdPedido { get; set; }
+        public int idPedido { get; set; }
 
-        public int IdComanda { get; set; }
-
-        [StringLength(50)]
-        public string CanalAtendimento { get; set; }
-
-        public int CodigoPedido { get; set; }
+        public int idComanda { get; set; }
 
         [StringLength(50)]
-        public string StatusAtualPedido { get; set; }
+        public string canalAtendimento { get; set; }
 
-        public int CodigoStatusAtualPedido { get; set; }
+        public int codigoPedido { get; set; }
+
+        [StringLength(50)]
+        public string statusAtualPedido { get; set; }
+
+        public int codigoStatusAtualPedido { get; set; }
 
         [NotMapped]
-        public DateTime DataHoraInclusao { get; set; }
+        public DateTime dataHoraInclusao { get; set; }
 
-        public List<Item> ItensDoPedido { get; set; }
+        public List<Item> itensDoPedido { get; set; }
 
     }
 }

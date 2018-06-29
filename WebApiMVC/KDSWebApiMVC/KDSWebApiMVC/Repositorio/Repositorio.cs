@@ -47,8 +47,8 @@ namespace KDSWebApiMVC.Repositorio
             Status status = db.Status.Find(idStatus);
             Pedido pedido = db.Pedido.Find(idPedido);
 
-            item.CodigoStatusAtualItem = status.IdStatus;
-            item.StatusAtualItem = status.Descricao;
+            item.codigoStatusAtualItem = status.idStatus;
+            item.statusAtualItem = status.descricao;
 
             db.Entry(item).State = EntityState.Modified;
 
@@ -80,16 +80,16 @@ namespace KDSWebApiMVC.Repositorio
             {
                 //Atualiza o Pedido
                 Status status = db.Status.Find(idStatus);
-                pedido.CodigoStatusAtualPedido = status.IdStatus;
-                pedido.StatusAtualPedido = status.Descricao;
+                pedido.codigoStatusAtualPedido = status.idStatus;
+                pedido.statusAtualPedido = status.descricao;
 
                 //Faz a busca pelos itens do pedido e os atualiza com o Status do pedido
-                var ItensPedido = db.Item.Where(w => w.IdPedido == pedido.IdPedido).ToList();
+                var ItensPedido = db.Item.Where(w => w.idPedido == pedido.idPedido).ToList();
 
                 foreach (var item in ItensPedido)
                 {
-                    item.CodigoStatusAtualItem = status.IdStatus;
-                    item.StatusAtualItem = status.Descricao;
+                    item.codigoStatusAtualItem = status.idStatus;
+                    item.statusAtualItem = status.descricao;
                     db.Entry(item).State = EntityState.Modified;
                     db.SaveChanges();
                 }
@@ -102,30 +102,30 @@ namespace KDSWebApiMVC.Repositorio
                  com isso ele varre e atualiza apenas os itens, mas trata em alguns Status a mudança do Pedido também.
                 */
 
-                int totalItensPedido = db.Item.Where(w => w.IdPedido == pedido.IdPedido).Count();
-                int itensPedidoPronto = db.Item.Where(w => w.IdPedido == pedido.IdPedido && w.CodigoStatusAtualItem == (int)CodStatusPedido.Pronto).Count();
-                int itensPedidoCancelado = db.Item.Where(w => w.IdPedido == pedido.IdPedido && w.CodigoStatusAtualItem == (int)CodStatusPedido.Cancelado).Count();
-                int itensPedidoEmPreparo = db.Item.Where(w => w.IdPedido == pedido.IdPedido && w.CodigoStatusAtualItem == (int)CodStatusPedido.EmPreparo).Count();
+                int totalItensPedido = db.Item.Where(w => w.idPedido == pedido.idPedido).Count();
+                int itensPedidoPronto = db.Item.Where(w => w.idPedido == pedido.idPedido && w.codigoStatusAtualItem == (int)CodStatusPedido.Pronto).Count();
+                int itensPedidoCancelado = db.Item.Where(w => w.idPedido == pedido.idPedido && w.codigoStatusAtualItem == (int)CodStatusPedido.Cancelado).Count();
+                int itensPedidoEmPreparo = db.Item.Where(w => w.idPedido == pedido.idPedido && w.codigoStatusAtualItem == (int)CodStatusPedido.EmPreparo).Count();
 
                 if (totalItensPedido == itensPedidoPronto)
                 {
-                    pedido.StatusAtualPedido = "PRONTO";
-                    pedido.CodigoStatusAtualPedido = (int)CodStatusPedido.Pronto;
+                    pedido.statusAtualPedido = "PRONTO";
+                    pedido.codigoStatusAtualPedido = (int)CodStatusPedido.Pronto;
                 }
                 else if (itensPedidoCancelado > 0)
                 {
                     if (totalItensPedido == itensPedidoCancelado)
                     {
-                        pedido.StatusAtualPedido = "CANCELADO";
-                        pedido.CodigoStatusAtualPedido = (int)CodStatusPedido.Cancelado;
+                        pedido.statusAtualPedido = "CANCELADO";
+                        pedido.codigoStatusAtualPedido = (int)CodStatusPedido.Cancelado;
                     }
                 }
                 else if (itensPedidoEmPreparo > 0)
                 {
                     if (totalItensPedido == itensPedidoEmPreparo)
                     {
-                        pedido.StatusAtualPedido = "EM PREPARO";
-                        pedido.CodigoStatusAtualPedido = (int)CodStatusPedido.EmPreparo;
+                        pedido.statusAtualPedido = "EM PREPARO";
+                        pedido.codigoStatusAtualPedido = (int)CodStatusPedido.EmPreparo;
                     }
                 }
             }
@@ -155,7 +155,7 @@ namespace KDSWebApiMVC.Repositorio
             Comanda gravaComanda = new Comanda();
             try
             {                
-                gravaComanda.NumeroComanda = comanda.NumeroComanda;
+                gravaComanda.numeroComanda = comanda.numeroComanda;
                 db.Comanda.Add(gravaComanda);
                 db.SaveChanges();
             }
@@ -168,11 +168,11 @@ namespace KDSWebApiMVC.Repositorio
             Pedido gravaPedido = new Pedido();
             try
             {
-                gravaPedido.IdComanda = gravaComanda.IdComanda;
-                gravaPedido.CanalAtendimento = comanda.Pedidos.FirstOrDefault().CanalAtendimento;
-                gravaPedido.CodigoPedido = GeraCodigoPedido();
-                gravaPedido.StatusAtualPedido = "PREPARAR";
-                gravaPedido.CodigoStatusAtualPedido = (int)CodStatusPedido.Preparar;
+                gravaPedido.idComanda = gravaComanda.idComanda;
+                gravaPedido.canalAtendimento = comanda.pedidos.FirstOrDefault().canalAtendimento;
+                gravaPedido.codigoPedido = GeraCodigoPedido();
+                gravaPedido.statusAtualPedido = "PREPARAR";
+                gravaPedido.codigoStatusAtualPedido = (int)CodStatusPedido.Preparar;
 
                 db.Pedido.Add(gravaPedido);
                 db.SaveChanges();
@@ -184,19 +184,19 @@ namespace KDSWebApiMVC.Repositorio
 
 
             //Gravando Item do Pedido vinculado ao Pedido
-            foreach (var item in comanda.Pedidos.FirstOrDefault().ItensDoPedido)
+            foreach (var item in comanda.pedidos.FirstOrDefault().itensDoPedido)
             {
 
                 Item gravaItem = new Item();
                 try
                 {
-                    gravaItem.IdPedido = gravaPedido.IdPedido;
-                    gravaItem.ObjectId = item.ObjectId;
-                    gravaItem.CodigoStatusAtualItem = (int)CodStatusPedido.Preparar;
-                    gravaItem.StatusAtualItem = "PREPARAR";
-                    gravaItem.Descricao = item.Descricao;
-                    gravaItem.Observacao = item.Observacao;
-                    gravaItem.TempoMedioPreparacaoEmMinutos = item.TempoMedioPreparacaoEmMinutos;
+                    gravaItem.idPedido = gravaPedido.idPedido;
+                    gravaItem.objectId = item.objectId;
+                    gravaItem.codigoStatusAtualItem = (int)CodStatusPedido.Preparar;
+                    gravaItem.statusAtualItem = "PREPARAR";
+                    gravaItem.descricao = item.descricao;
+                    gravaItem.observacao = item.observacao;
+                    gravaItem.tempoMedioPreparacaoEmMinutos = item.tempoMedioPreparacaoEmMinutos;
                     db.Item.Add(gravaItem);
                     db.SaveChanges();
                 }
@@ -206,13 +206,13 @@ namespace KDSWebApiMVC.Repositorio
                 }
 
                 //Gravando Item Adicional vinculado ao Item
-                foreach (var itemIa in item.AdicionaisItem)
+                foreach (var itemIa in item.adicionaisItem)
                 {
                     ItemAdicional gravaItemAdicional = new ItemAdicional();
                     try
                     {
-                        gravaItemAdicional.IdItem = gravaItem.IdItem;
-                        gravaItemAdicional.Descricao = itemIa.Descricao;
+                        gravaItemAdicional.idItem = gravaItem.idItem;
+                        gravaItemAdicional.descricao = itemIa.descricao;
                         db.ItemAdicional.Add(gravaItemAdicional);
                         db.SaveChanges();
                     }
@@ -223,16 +223,16 @@ namespace KDSWebApiMVC.Repositorio
                 }
 
                 //Gravando Item Insumo vinculado ao Item
-                foreach (var itemI in item.InsumoItem)
+                foreach (var itemI in item.insumoItem)
                 {
                     ItemInsumo gravaItemInsumo = new ItemInsumo();
                     try
                     {
-                        gravaItemInsumo.IdItem = gravaItem.IdItem;
-                        gravaItemInsumo.ObjectId = itemI.ObjectId;
-                        gravaItemInsumo.Descricao = itemI.Descricao;
-                        gravaItemInsumo.Remover = itemI.Remover;
-                        gravaItemInsumo.Quantidade = itemI.Quantidade;
+                        gravaItemInsumo.idItem = gravaItem.idItem;
+                        gravaItemInsumo.objectId = itemI.objectId;
+                        gravaItemInsumo.descricao = itemI.descricao;
+                        gravaItemInsumo.remover = itemI.remover;
+                        gravaItemInsumo.quantidade = itemI.quantidade;
                         db.ItemInsumo.Add(gravaItemInsumo);
                         db.SaveChanges();
                     }
@@ -259,16 +259,16 @@ namespace KDSWebApiMVC.Repositorio
         /// <returns></returns>
         private int GeraCodigoPedido()
         {
-            var UltimoCodigoPedido = db.Pedido.OrderByDescending(o => o.IdPedido).FirstOrDefault();
+            var UltimoCodigoPedido = db.Pedido.OrderByDescending(o => o.idPedido).FirstOrDefault();
             int NovoCodigoPedido = 0;
 
-            if (UltimoCodigoPedido.CodigoPedido == 9999)
+            if (UltimoCodigoPedido.codigoPedido == 9999)
             {
                 NovoCodigoPedido = 1;
             }
             else
             {
-                NovoCodigoPedido = UltimoCodigoPedido.CodigoPedido + 1;
+                NovoCodigoPedido = UltimoCodigoPedido.codigoPedido + 1;
             }
 
             return NovoCodigoPedido;
@@ -286,14 +286,14 @@ namespace KDSWebApiMVC.Repositorio
         public Pedido PegaItensPorPedido(Pedido pedido)
         {
             var itensPedido = new List<Item>();
-            itensPedido = db.Item.Where(x => x.IdPedido == pedido.IdPedido).ToList();
+            itensPedido = db.Item.Where(x => x.idPedido == pedido.idPedido).ToList();
             if (itensPedido.Count > 0)
                 foreach (var item in itensPedido)
                 {
-                    item.AdicionaisItem = db.ItemAdicional.Where(x => x.IdItem == item.IdItem).ToList();
-                    item.InsumoItem = db.ItemInsumo.Where(x => x.IdItem == item.IdItem).ToList();
+                    item.adicionaisItem = db.ItemAdicional.Where(x => x.idItem == item.idItem).ToList();
+                    item.insumoItem = db.ItemInsumo.Where(x => x.idItem == item.idItem).ToList();
                 }
-            pedido.ItensDoPedido = itensPedido;
+            pedido.itensDoPedido = itensPedido;
             return pedido;
         }
 

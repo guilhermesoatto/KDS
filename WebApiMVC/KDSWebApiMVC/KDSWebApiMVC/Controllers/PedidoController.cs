@@ -27,7 +27,7 @@ namespace KDSWebApiMVC.Controllers
         [ResponseType(typeof(Pedido))]
         public IHttpActionResult GetPedido(int id)
         {
-            Pedido pedido = GetPedido().FirstOrDefault(x => x.IdPedido == id);
+            Pedido pedido = GetPedido().FirstOrDefault(x => x.idPedido == id);
             if (pedido == null)
             {
                 return NotFound();
