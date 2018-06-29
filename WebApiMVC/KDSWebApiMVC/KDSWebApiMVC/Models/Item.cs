@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace KDSWebApiMVC.Models
 {
+    [Table("dbo.Item")]
     public class Item
     {
         [Key]
@@ -26,5 +26,7 @@ namespace KDSWebApiMVC.Models
         public string Observacao { get; set; }
         public DateTime DataHoraInclusao { get; set; }
         public int TempoMedioPreparacaoEmMinutos { get; set; }
+        public List<ItemAdicional> AdicionaisItem{ get; set; }
+        public List<ItemInsumo> InsumoItem{ get; set; }
     }
 }

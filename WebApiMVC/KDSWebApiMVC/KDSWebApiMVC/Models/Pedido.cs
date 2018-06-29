@@ -25,5 +25,8 @@ namespace KDSWebApiMVC.Models
 
         public int CodigoStatusAtualPedido { get; set; }
         public DateTime DataHoraInclusao { get; set; }
+
+        public List<Item> ItensDoPedido { get; set; }
+
     }
 }
