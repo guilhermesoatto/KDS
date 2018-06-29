@@ -24,10 +24,6 @@ namespace KDSWebApiMVC.Models
         public DbSet<ItemAdicional> ItemAdicional { get; set; }
         public DbSet<ItemInsumo> ItemInsumo { get; set; }
 
-        public System.Data.Entity.DbSet<KDSWebApiMVC.Models.Item> Item { get; set; }
-
-        public System.Data.Entity.DbSet<KDSWebApiMVC.Models.Status> Status { get; set; }
-
         // Add a DbSet for each entity type that you want to include in your model. For more information 
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
