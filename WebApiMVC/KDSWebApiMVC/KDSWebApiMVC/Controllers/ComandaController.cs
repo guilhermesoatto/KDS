@@ -8,8 +8,11 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
+using System.Web.Http.Results;
 using KDSWebApiMVC.Models;
 using KDSWebApiMVC.Services;
+using Microsoft.ApplicationInsights.Extensibility.Implementation;
+using Newtonsoft.Json;
 
 namespace KDSWebApiMVC.Controllers
 {
@@ -19,10 +22,19 @@ namespace KDSWebApiMVC.Controllers
         private Servicos servicos = new Servicos();
 
         // GET: api/Comanda
-        public IQueryable<Comanda> GetComanda()
+        public IQueryable<Comanda> GetComanda(string codigoStatusPedido, string canalAtendimento)
         {
-            var comandas = servicos.RetornaComandas();
-            return comandas.AsQueryable();
+            if (!string.IsNullOrEmpty(codigoStatusPedido))
+            {
+                //filtra pedido de comanda que possue itens neste estatos
+            }
+            else if (!string.IsNullOrEmpty(canalAtendimento))
+            {
+                //filtra pedidos de comanda por canal de atedieto
+            }
+            return servicos.RetornaComandas();
+
+            // return JsonConvert.SerializeObject(comandas,Formatting.Indented);
         }
 
         // GET: api/Comanda/5

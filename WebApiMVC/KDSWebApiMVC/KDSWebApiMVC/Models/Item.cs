@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 namespace KDSWebApiMVC.Models
 {
@@ -30,7 +31,7 @@ namespace KDSWebApiMVC.Models
 
         public int tempoMedioPreparacaoEmMinutos { get; set; }
 
-        public List<ItemAdicional> adicionaisItem { get; set; }
-        public List<ItemInsumo> insumoItem { get; set; }
+        public IQueryable<ItemAdicional> adicionaisItem { get; set; }
+        public IQueryable<ItemInsumo> insumoItem { get; set; }
     }
 }

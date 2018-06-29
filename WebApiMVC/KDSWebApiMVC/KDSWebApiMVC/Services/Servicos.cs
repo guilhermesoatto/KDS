@@ -14,7 +14,7 @@ namespace KDSWebApiMVC.Services
         /// Retorna todos os pedidos e seus itens
         /// </summary>
         /// <returns></returns>
-        public List<Pedido> RetornaPedidos()
+        public IQueryable<Pedido> RetornaPedidos()
         {
             var pedidos = repositorio.RetornaPedidos().ToList();
             var listaPedido = new List<Pedido>();
@@ -22,26 +22,26 @@ namespace KDSWebApiMVC.Services
             {
                 foreach (Pedido item in pedidos)
                 {
-                    listaPedido.Add(repositorio.PegaItensPorPedido(pedidos.Find(x => x.idPedido == item.idPedido)));
+                    listaPedido.Add(repositorio.PegaItensPorPedido(pedidos.FirstOrDefault(x => x.idPedido == item.idPedido)));
                 }
             }
-            return listaPedido;
+            return listaPedido.AsQueryable();
         }
 
         public Pedido PreencheItensPorPedido(Pedido pedido)
         {
             return repositorio.PegaItensPorPedido(pedido);
         }
-        public List<Comanda> RetornaComandas()
+        public IQueryable<Comanda> RetornaComandas()
         {
             var comandas = repositorio.RetornaComandas().ToList();
             foreach (var comanda in comandas)
             {
                 comanda.success = true;
-                comanda.pedidos = new List<Pedido>();
-                comanda.pedidos = RetornaPedidos().FindAll(x => x.idComanda == comanda.idComanda);
+                //comanda.pedidos = new List<Pedido>();
+                comanda.pedidos = RetornaPedidos().Where(x => x.idComanda == comanda.idComanda);
             }
-            return comandas.ToList();
+            return comandas.AsQueryable(); ;
         }
 		
 		public bool AlteraStatusItem(int idPedido, int idItem, int idStatus)

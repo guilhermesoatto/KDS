@@ -251,8 +251,6 @@ namespace KDSWebApiMVC.Repositorio
             return comanda;
         }
 
-
-
         /// <summary>
         /// Gerador de Código até 9999, código informado para o cliente para retirada do Pedido
         /// </summary>
@@ -285,15 +283,15 @@ namespace KDSWebApiMVC.Repositorio
 
         public Pedido PegaItensPorPedido(Pedido pedido)
         {
-            var itensPedido = new List<Item>();
-            itensPedido = db.Item.Where(x => x.idPedido == pedido.idPedido).ToList();
-            if (itensPedido.Count > 0)
+            IQueryable<Item> itensPedido;
+            itensPedido = db.Item.Where(x => x.idPedido == pedido.idPedido);
+            if (itensPedido.Count() > 0)
                 foreach (var item in itensPedido)
                 {
-                    item.adicionaisItem = db.ItemAdicional.Where(x => x.idItem == item.idItem).ToList();
-                    item.insumoItem = db.ItemInsumo.Where(x => x.idItem == item.idItem).ToList();
+                    item.adicionaisItem = db.ItemAdicional.Where(x => x.idItem == item.idItem);
+                    item.insumoItem = db.ItemInsumo.Where(x => x.idItem == item.idItem);
                 }
-            pedido.itensDoPedido = itensPedido;
+            pedido.itensDoPedido = itensPedido.ToList();
             return pedido;
         }
 
