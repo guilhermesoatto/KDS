@@ -37,6 +37,35 @@ namespace KDSWebApiMVC.Controllers
         }
 
 
+        // PUT: api/Pedido/5/item/50/AlteraStatusItem/2
+        [Route("api/Pedido/{idPedido}/item/{idItem}/AlteraStatusItem/{idStatus}")]
+        [HttpPut]
+        public IHttpActionResult AlteraStatusItem(int idPedido, int idItem, int idStatus)
+        {
+            if (servicos.AlteraStatusItem(idPedido, idItem, idStatus) == false)
+            {
+                return StatusCode(HttpStatusCode.BadRequest);
+            }
+
+            return StatusCode(HttpStatusCode.OK);
+
+        }
+
+        // PUT: api/Pedido/5/AlteraStatusPedido/2
+        [Route("api/Pedido/{idPedido}/AlteraStatusPedido/{idStatus}")]
+        [HttpPut]
+        public IHttpActionResult AlteraStatusPedido(int idPedido, int idStatus)
+        {
+            if (servicos.AlteraStatusPedido(idPedido, idStatus) == false)
+            {
+                return StatusCode(HttpStatusCode.BadRequest);
+            }
+
+            return StatusCode(HttpStatusCode.OK);
+
+        }
+
+
         [Route("api/Pedido/NovoPedido")]
         [HttpPost]
         public HttpResponseMessage NovoPedido(Comanda comanda)
