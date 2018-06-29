@@ -44,5 +44,17 @@ namespace KDSWebApiMVC.Services
             }
             return comandas.ToList();
         }
+
+        public bool AlteraStatusItem(int idPedido, int idItem, int idStatus)
+        {
+            return reposito.AlteraStatusItem(idPedido, idItem, idStatus);
+        }
+
+        public bool AlteraStatusPedido(int idPedido, int idStatus)
+        {
+            var pedido = GetPedido().FirstOrDefault(x => x.IdPedido == idPedido);
+            return reposito.AlteraStatusPedido(pedido, idStatus);
+        }
+
     }
 }
