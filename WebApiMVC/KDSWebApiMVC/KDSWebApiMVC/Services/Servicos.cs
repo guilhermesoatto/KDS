@@ -23,7 +23,6 @@ namespace KDSWebApiMVC.Services
                 foreach (Pedido item in pedidos)
                 {
                     listaPedido.Add(repositorio.PegaItensPorPedido(pedidos.Find(x => x.IdPedido == item.IdPedido)));
-
                 }
             }
             return listaPedido;
