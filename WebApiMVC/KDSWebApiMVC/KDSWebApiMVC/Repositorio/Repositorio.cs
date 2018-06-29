@@ -1,6 +1,8 @@
 ﻿using KDSWebApiMVC.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Web;
 
@@ -16,7 +18,7 @@ namespace KDSWebApiMVC.Repositorio
         }
 
         #region UPDATES
-		 enum StatusPedido
+        enum StatusPedido
         {
             Preparar = 1,
             EmPreparo = 2,
@@ -126,7 +128,7 @@ namespace KDSWebApiMVC.Repositorio
                     }
                 }
             }
-                       
+
             db.Entry(pedido).State = EntityState.Modified;
 
             try
@@ -167,13 +169,6 @@ namespace KDSWebApiMVC.Repositorio
             pedido.ItensDoPedido = itensPedido;
             return pedido;
         }
-
-
-        #region LISTAGEM
-            public List<Pedido> RetornaPedidos()
-            {
-                return db.Pedido.ToList();
-            }
 
         public IQueryable<Comanda> RetornaComandas()
         {

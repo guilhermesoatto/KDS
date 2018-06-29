@@ -46,13 +46,13 @@ namespace KDSWebApiMVC.Services
 		
 		public bool AlteraStatusItem(int idPedido, int idItem, int idStatus)
         {
-            return reposito.AlteraStatusItem(idPedido, idItem, idStatus);
+            return repositorio.AlteraStatusItem(idPedido, idItem, idStatus);
         }
 
         public bool AlteraStatusPedido(int idPedido, int idStatus)
         {
-            var pedido = GetPedido().FirstOrDefault(x => x.IdPedido == idPedido);
-            return reposito.AlteraStatusPedido(pedido, idStatus);
+            var pedido = RetornaPedidos().FirstOrDefault(x => x.IdPedido == idPedido);
+            return repositorio.AlteraStatusPedido(pedido, idStatus);
         }
     }
 }

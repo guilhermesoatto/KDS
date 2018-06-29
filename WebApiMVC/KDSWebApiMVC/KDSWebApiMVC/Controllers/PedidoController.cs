@@ -27,7 +27,7 @@ namespace KDSWebApiMVC.Controllers
         [ResponseType(typeof(Pedido))]
         public IHttpActionResult GetPedido(int id)
         {
-            Pedido pedido = db.Pedido.Find(id);
+            Pedido pedido = GetPedido().FirstOrDefault(x => x.IdPedido == id);
             if (pedido == null)
             {
                 return NotFound();
@@ -45,50 +45,5 @@ namespace KDSWebApiMVC.Controllers
             return Request.CreateResponse(HttpStatusCode.OK);
         }
 
-
-        // POST: api/Pedido
-        [ResponseType(typeof(Pedido))]
-        public IHttpActionResult PostPedido(Pedido pedido)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            db.Pedido.Add(pedido);
-            db.SaveChanges();
-
-            return CreatedAtRoute("DefaultApi", new { id = pedido.IdPedido }, pedido);
-        }
-
-        // DELETE: api/Pedido/5
-        [ResponseType(typeof(Pedido))]
-        public IHttpActionResult DeletePedido(int id)
-        {
-            Pedido pedido = db.Pedido.Find(id);
-            if (pedido == null)
-            {
-                return NotFound();
-            }
-
-            db.Pedido.Remove(pedido);
-            db.SaveChanges();
-
-            return Ok(pedido);
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        private bool PedidoExists(int id)
-        {
-            return db.Pedido.Count(e => e.IdPedido == id) > 0;
-        }
     }
 }
