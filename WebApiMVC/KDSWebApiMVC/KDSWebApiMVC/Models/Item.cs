@@ -24,8 +24,10 @@ namespace KDSWebApiMVC.Models
 
         [StringLength(150)]
         public string observacao { get; set; }
-        [NotMapped]
+
+        [DisplayFormat(DataFormatString = "{0:s}")]
         public DateTime dataHoraInclusao { get; set; }
+
         public int tempoMedioPreparacaoEmMinutos { get; set; }
 
         public List<ItemAdicional> adicionaisItem { get; set; }

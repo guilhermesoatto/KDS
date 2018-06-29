@@ -14,7 +14,8 @@ namespace KDSWebApiMVC.Models
         public int idComanda { get; set; }
         [StringLength(50)]
         public string numeroComanda { get; set; }
-        [NotMapped]
+
+        [DisplayFormat(DataFormatString = "{0:s}")]
         public DateTime dataHoraInclusao { get; set; }
 
         public List<Pedido> pedidos { get; set; }

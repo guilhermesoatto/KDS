@@ -25,7 +25,8 @@ namespace KDSWebApiMVC.Models
 
         public int codigoStatusAtualPedido { get; set; }
 
-        [NotMapped]
+        //[NotMapped]
+        [DisplayFormat(DataFormatString = "{0:s}" )]
         public DateTime dataHoraInclusao { get; set; }
 
         public List<Item> itensDoPedido { get; set; }

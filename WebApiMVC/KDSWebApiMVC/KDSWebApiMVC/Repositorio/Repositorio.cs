@@ -49,7 +49,7 @@ namespace KDSWebApiMVC.Repositorio
 
             item.codigoStatusAtualItem = status.idStatus;
             item.statusAtualItem = status.descricao;
-
+            item.dataHoraInclusao = DateTime.Now;
             db.Entry(item).State = EntityState.Modified;
 
             try
@@ -90,6 +90,7 @@ namespace KDSWebApiMVC.Repositorio
                 {
                     item.codigoStatusAtualItem = status.idStatus;
                     item.statusAtualItem = status.descricao;
+                    item.dataHoraInclusao = DateTime.Now;
                     db.Entry(item).State = EntityState.Modified;
                     db.SaveChanges();
                 }
@@ -129,7 +130,7 @@ namespace KDSWebApiMVC.Repositorio
                     }
                 }
             }
-
+            pedido.dataHoraInclusao = DateTime.Now;
             db.Entry(pedido).State = EntityState.Modified;
 
             try
@@ -156,6 +157,7 @@ namespace KDSWebApiMVC.Repositorio
             try
             {                
                 gravaComanda.numeroComanda = comanda.numeroComanda;
+                gravaComanda.dataHoraInclusao = DateTime.Now;
                 db.Comanda.Add(gravaComanda);
                 db.SaveChanges();
             }
@@ -173,7 +175,7 @@ namespace KDSWebApiMVC.Repositorio
                 gravaPedido.codigoPedido = GeraCodigoPedido();
                 gravaPedido.statusAtualPedido = "PREPARAR";
                 gravaPedido.codigoStatusAtualPedido = (int)CodStatusPedido.Preparar;
-
+                gravaPedido.dataHoraInclusao = DateTime.Now;
                 db.Pedido.Add(gravaPedido);
                 db.SaveChanges();
             }
@@ -197,6 +199,7 @@ namespace KDSWebApiMVC.Repositorio
                     gravaItem.descricao = item.descricao;
                     gravaItem.observacao = item.observacao;
                     gravaItem.tempoMedioPreparacaoEmMinutos = item.tempoMedioPreparacaoEmMinutos;
+                    gravaItem.dataHoraInclusao = DateTime.Now;
                     db.Item.Add(gravaItem);
                     db.SaveChanges();
                 }
@@ -243,10 +246,7 @@ namespace KDSWebApiMVC.Repositorio
                 }
 
             }
-
-            db.SaveChanges();
             db.Dispose();
-
             comanda.success = true;
             return comanda;
         }
