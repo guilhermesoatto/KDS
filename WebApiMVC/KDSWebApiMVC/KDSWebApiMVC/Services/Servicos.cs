@@ -57,7 +57,7 @@ namespace KDSWebApiMVC.Services
 
         public Comanda InserePedido(Comanda comanda)
         {
-            return reposito.InserePedido(comanda);
+            return repositorio.InserePedido(comanda);
         }
 
     }

@@ -18,7 +18,7 @@ namespace KDSWebApiMVC.Repositorio
         }
 
         #region UPDATES
-        enum StatusPedido
+        enum CodStatusPedido
         {
             Preparar = 1,
             EmPreparo = 2,
@@ -26,6 +26,7 @@ namespace KDSWebApiMVC.Repositorio
             Entregue = 4,
             Cancelado = 5
         }
+
         /// <summary>
         /// Atualiza Item, caso todos os itens estejam no mesmo status atualiza o pedido 
         /// </summary>
@@ -102,21 +103,21 @@ namespace KDSWebApiMVC.Repositorio
                 */
 
                 int totalItensPedido = db.Item.Where(w => w.IdPedido == pedido.IdPedido).Count();
-                int itensPedidoPronto = db.Item.Where(w => w.IdPedido == pedido.IdPedido && w.CodigoStatusAtualItem == (int)StatusPedido.Pronto).Count();
-                int itensPedidoCancelado = db.Item.Where(w => w.IdPedido == pedido.IdPedido && w.CodigoStatusAtualItem == (int)StatusPedido.Cancelado).Count();
-                int itensPedidoEmPreparo = db.Item.Where(w => w.IdPedido == pedido.IdPedido && w.CodigoStatusAtualItem == (int)StatusPedido.EmPreparo).Count();
+                int itensPedidoPronto = db.Item.Where(w => w.IdPedido == pedido.IdPedido && w.CodigoStatusAtualItem == (int)CodStatusPedido.Pronto).Count();
+                int itensPedidoCancelado = db.Item.Where(w => w.IdPedido == pedido.IdPedido && w.CodigoStatusAtualItem == (int)CodStatusPedido.Cancelado).Count();
+                int itensPedidoEmPreparo = db.Item.Where(w => w.IdPedido == pedido.IdPedido && w.CodigoStatusAtualItem == (int)CodStatusPedido.EmPreparo).Count();
 
                 if (totalItensPedido == itensPedidoPronto)
                 {
                     pedido.StatusAtualPedido = "PRONTO";
-                    pedido.CodigoStatusAtualPedido = (int)StatusPedido.Pronto;
+                    pedido.CodigoStatusAtualPedido = (int)CodStatusPedido.Pronto;
                 }
                 else if (itensPedidoCancelado > 0)
                 {
                     if (totalItensPedido == itensPedidoCancelado)
                     {
                         pedido.StatusAtualPedido = "CANCELADO";
-                        pedido.CodigoStatusAtualPedido = (int)StatusPedido.Cancelado;
+                        pedido.CodigoStatusAtualPedido = (int)CodStatusPedido.Cancelado;
                     }
                 }
                 else if (itensPedidoEmPreparo > 0)
@@ -124,7 +125,7 @@ namespace KDSWebApiMVC.Repositorio
                     if (totalItensPedido == itensPedidoEmPreparo)
                     {
                         pedido.StatusAtualPedido = "EM PREPARO";
-                        pedido.CodigoStatusAtualPedido = (int)StatusPedido.EmPreparo;
+                        pedido.CodigoStatusAtualPedido = (int)CodStatusPedido.EmPreparo;
                     }
                 }
             }
@@ -143,34 +144,134 @@ namespace KDSWebApiMVC.Repositorio
             return true;
         }
 
+        /// <summary>
+        /// Inclusão de Pedido recebido em JSON pelo ATM
+        /// </summary>
+        /// <param name="comanda"></param>
+        /// <returns></returns>
         public Comanda InserePedido(Comanda comanda)
         {
-
+            //Grava a Comanda
             Comanda gravaComanda = new Comanda();
+            try
+            {                
+                gravaComanda.NumeroComanda = comanda.NumeroComanda;
+                db.Comanda.Add(gravaComanda);
+                db.SaveChanges();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                comanda.success = false;
+            }
 
-            gravaComanda.NumeroComanda = comanda.NumeroComanda;
-            db.Comanda.Add(gravaComanda);
-            db.SaveChanges();
-
-
-
-
+            //Gravando Pedido vinculado ao Item
             Pedido gravaPedido = new Pedido();
+            try
+            {
+                gravaPedido.IdComanda = gravaComanda.IdComanda;
+                gravaPedido.CanalAtendimento = comanda.Pedidos.FirstOrDefault().CanalAtendimento;
+                gravaPedido.CodigoPedido = GeraCodigoPedido();
+                gravaPedido.StatusAtualPedido = "PREPARAR";
+                gravaPedido.CodigoStatusAtualPedido = (int)CodStatusPedido.Preparar;
 
-            gravaPedido.IdComanda = gravaComanda.IdComanda;
-            gravaPedido.CanalAtendimento = comanda.Pedidos.FirstOrDefault().CanalAtendimento;
-            gravaPedido.CodigoPedido = GeraCodigoPedido();
-            gravaPedido.StatusAtualPedido = "PREPARAR";
-            //gravaPedido
-            
+                db.Pedido.Add(gravaPedido);
+                db.SaveChanges();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                comanda.success = false;
+            }
+
+
+            //Gravando Item do Pedido vinculado ao Pedido
+            foreach (var item in comanda.Pedidos.FirstOrDefault().ItensDoPedido)
+            {
+
+                Item gravaItem = new Item();
+                try
+                {
+                    gravaItem.IdPedido = gravaPedido.IdPedido;
+                    gravaItem.ObjectId = item.ObjectId;
+                    gravaItem.CodigoStatusAtualItem = (int)CodStatusPedido.Preparar;
+                    gravaItem.StatusAtualItem = "PREPARAR";
+                    gravaItem.Descricao = item.Descricao;
+                    gravaItem.Observacao = item.Observacao;
+                    gravaItem.TempoMedioPreparacaoEmMinutos = item.TempoMedioPreparacaoEmMinutos;
+                    db.Item.Add(gravaItem);
+                    db.SaveChanges();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    comanda.success = false;
+                }
+
+                //Gravando Item Adicional vinculado ao Item
+                foreach (var itemIa in item.AdicionaisItem)
+                {
+                    ItemAdicional gravaItemAdicional = new ItemAdicional();
+                    try
+                    {
+                        gravaItemAdicional.IdItem = gravaItem.IdItem;
+                        gravaItemAdicional.Descricao = itemIa.Descricao;
+                        db.ItemAdicional.Add(gravaItemAdicional);
+                        db.SaveChanges();
+                    }
+                    catch (DbUpdateConcurrencyException)
+                    {
+                        comanda.success = false;
+                    }
+                }
+
+                //Gravando Item Insumo vinculado ao Item
+                foreach (var itemI in item.InsumoItem)
+                {
+                    ItemInsumo gravaItemInsumo = new ItemInsumo();
+                    try
+                    {
+                        gravaItemInsumo.IdItem = gravaItem.IdItem;
+                        gravaItemInsumo.ObjectId = itemI.ObjectId;
+                        gravaItemInsumo.Descricao = itemI.Descricao;
+                        gravaItemInsumo.Remover = itemI.Remover;
+                        gravaItemInsumo.Quantidade = itemI.Quantidade;
+                        db.ItemInsumo.Add(gravaItemInsumo);
+                        db.SaveChanges();
+                    }
+                    catch (DbUpdateConcurrencyException)
+                    {
+                        comanda.success = false;
+                    }
+                }
+
+            }
+
+            db.SaveChanges();
+            db.Dispose();
 
             comanda.success = true;
-            return null;
+            return comanda;
         }
 
+
+
+        /// <summary>
+        /// Gerador de Código até 9999, código informado para o cliente para retirada do Pedido
+        /// </summary>
+        /// <returns></returns>
         private int GeraCodigoPedido()
         {
-            return DateTime.Now.Minute;
+            var UltimoCodigoPedido = db.Pedido.OrderByDescending(o => o.IdPedido).FirstOrDefault();
+            int NovoCodigoPedido = 0;
+
+            if (UltimoCodigoPedido.CodigoPedido == 9999)
+            {
+                NovoCodigoPedido = 1;
+            }
+            else
+            {
+                NovoCodigoPedido = UltimoCodigoPedido.CodigoPedido + 1;
+            }
+
+            return NovoCodigoPedido;
         }
 
         #endregion

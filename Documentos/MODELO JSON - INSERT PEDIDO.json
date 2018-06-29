@@ -1,0 +1,98 @@
+{  
+   "success" : true,
+   "NumeroComanda":"35",
+   "Pedidos":[  
+      {  
+         "CanalAtendimento":"ATM",
+         "ItensDoPedido":[  
+            {  
+               "ObjectId":"7949c2ff-caec-437e-8168-a8s7d6as7df6",
+               "Descricao":"MISTO QUENTE",
+               "Observacao":"BACON BEM PASSADO",
+               "TempoMedioPreparacaoEmMinutos":8,
+               "AdicionaisItem":[  
+                  {  
+                     "Descricao":"BACON"
+                  },
+                  {  
+                     "Descricao":"QUEIJO EXTRA"
+                  }
+               ],
+               "InsumoItem":[  
+                  {  
+                     "ObjectId":"7949c2ff-caec-437e-8168-a8s7d6as7df6",
+                     "Descricao":"PRESUNTO",
+                     "Remover":1,
+                     "Quantidade":1
+                  },
+                  {  
+                     "ObjectId":"7949c2ff-caec-437e-8168-a8s7d6as7df6",
+                     "Descricao":"PAO FRANCES",
+                     "Remover":0,
+                     "Quantidade":1
+                  },
+                  {  
+                     "ObjectId":"7949c2ff-caec-437e-8168-a8s7d6as7df6",
+                     "Descricao":"QUEIJO",
+                     "Remover":0,
+                     "Quantidade":1
+                  },
+                  {  
+                     "ObjectId":"7949c2ff-caec-437e-8168-a8s7d6as7df6",
+                     "Descricao":"TOMATE",
+                     "Remover":0,
+                     "Quantidade":1
+                  }
+               ]
+            },
+            {  
+               "ObjectId":"732fc260-18f5-420b-be87-3b649efbe33a\r\n",
+               "Descricao":"SUCO DE LARANJA",
+               "Observacao":"SEM AÇUCAR",
+               "TempoMedioPreparacaoEmMinutos":1,
+               "AdicionaisItem":[  
+					{  
+                     "Descricao":"GELO"
+                     }
+               ],
+               "InsumoItem":[  
+					{  
+                     "ObjectId":"7949c2ff-caec-437e-8168-a8s7d6as7df6",
+                     "Descricao":"LARANJA",
+                     "Remover":0,
+                     "Quantidade":1
+                	}
+               ]
+            },
+			{  
+               "ObjectId":"732fc260-18f5-420b-be87-3b649efbe33a\r\n",
+               "Descricao":"PORÇÃO DE BATATA FRITA",
+               "Observacao":"",
+               "TempoMedioPreparacaoEmMinutos":1,
+               "AdicionaisItem":[  
+					{  
+                     "Descricao":"CHEDDAR"
+                	},
+					{  
+                     "Descricao":"BACON"
+                	}
+               ],
+               "InsumoItem":[  
+					{  
+                     "ObjectId":"7949c2ff-caec-437e-8168-a8s7d6as7df6",
+                     "Descricao":"1K DE BATATA",
+                     "Remover":0,
+                     "Quantidade":1
+                	},
+					{  
+                     "ObjectId":"7949c2ff-caec-437e-8168-a8s7d6as7df6",
+                     "Descricao":"200g CHEDDAR",
+                     "Remover":0,
+                     "Quantidade":1
+                	}
+               ]
+            }
+         ]
+      }
+   ]
+}
