@@ -9,17 +9,20 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using KDSWebApiMVC.Models;
+using KDSWebApiMVC.Services;
 
 namespace KDSWebApiMVC.Controllers
 {
     public class ComandaController : ApiController
     {
         private DataModel db = new DataModel();
+        private Servicos servicos = new Servicos();
 
         // GET: api/Comanda
         public IQueryable<Comanda> GetComanda()
         {
-            return db.Comanda;
+            var comandas = servicos.RetornaComandas();
+            return comandas.AsQueryable();
         }
 
         // GET: api/Comanda/5

@@ -21,7 +21,7 @@ namespace KDSWebApiMVC.Controllers
         // GET: api/Pedido
         public IQueryable<Pedido> GetPedido()
         {
-            return servicos.GetPedido().AsQueryable();
+            return servicos.RetornaPedidos().AsQueryable();
         }
 
         // GET: api/Pedido/5
