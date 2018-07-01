@@ -39,7 +39,7 @@ namespace KDSWebApiMVC.Services
             {
                 comanda.success = true;
                 //comanda.pedidos = new List<Pedido>();
-                comanda.pedidos = RetornaPedidos().Where(x => x.idComanda == comanda.idComanda);
+                comanda.pedidos = RetornaPedidos().Where(x => x.idComanda == comanda.idComanda).ToList();
             }
             return comandas.AsQueryable(); ;
         }
@@ -55,9 +55,9 @@ namespace KDSWebApiMVC.Services
             return repositorio.AlteraStatusPedido(pedido, idStatus);
         }
 
-        public Comanda InserePedido(Comanda comanda)
+        public Comanda InserePedido(Comanda comanda, string canaldeEntrada)
         {
-            return repositorio.InserePedido(comanda);
+            return repositorio.InserePedido(comanda, canaldeEntrada);
         }
 
     }

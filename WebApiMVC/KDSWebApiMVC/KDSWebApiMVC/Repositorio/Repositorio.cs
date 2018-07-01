@@ -150,14 +150,14 @@ namespace KDSWebApiMVC.Repositorio
         /// </summary>
         /// <param name="comanda"></param>
         /// <returns></returns>
-        public Comanda InserePedido(Comanda comanda)
+        public Comanda InserePedido(Comanda comanda, string canaldeEntrada)
         {
             //Grava a Comanda
             Comanda gravaComanda = new Comanda();
             try
             {                
                 gravaComanda.numeroComanda = comanda.numeroComanda;
-                gravaComanda.dataHoraInclusao = DateTime.Now;
+                //gravaComanda.dataHoraInclusao = DateTime.Now;
                 db.Comanda.Add(gravaComanda);
                 db.SaveChanges();
             }
@@ -171,8 +171,8 @@ namespace KDSWebApiMVC.Repositorio
             try
             {
                 gravaPedido.idComanda = gravaComanda.idComanda;
-                gravaPedido.canalAtendimento = comanda.pedidos.FirstOrDefault().canalAtendimento;
-                gravaPedido.codigoPedido = GeraCodigoPedido();
+                gravaPedido.canalAtendimento = canaldeEntrada;
+                gravaPedido.codigoPedido = 4;
                 gravaPedido.statusAtualPedido = "PREPARAR";
                 gravaPedido.codigoStatusAtualPedido = (int)CodStatusPedido.Preparar;
                 gravaPedido.dataHoraInclusao = DateTime.Now;
@@ -288,8 +288,8 @@ namespace KDSWebApiMVC.Repositorio
             if (itensPedido.Count() > 0)
                 foreach (var item in itensPedido)
                 {
-                    item.adicionaisItem = db.ItemAdicional.Where(x => x.idItem == item.idItem);
-                    item.insumoItem = db.ItemInsumo.Where(x => x.idItem == item.idItem);
+                    item.adicionaisItem = db.ItemAdicional.Where(x => x.idItem == item.idItem).ToList();
+                    item.insumoItem = db.ItemInsumo.Where(x => x.idItem == item.idItem).ToList();
                 }
             pedido.itensDoPedido = itensPedido.ToList();
             return pedido;

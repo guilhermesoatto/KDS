@@ -15,10 +15,11 @@ namespace KDSWebApiMVC.Models
         [StringLength(50)]
         public string numeroComanda { get; set; }
 
-        [DisplayFormat(DataFormatString = "{0:s}")]
-        public DateTime dataHoraInclusao { get; set; }
+        //[DisplayFormat(DataFormatString = "{0:s}")]
+        //[NotMapped]
+        //public DateTime dataHoraInclusao { get; set; }
 
-        public IQueryable<Pedido> pedidos { get; set; }
+        public List<Pedido> pedidos { get; set; }
 
         [NotMapped]
         public bool success { get; set; }

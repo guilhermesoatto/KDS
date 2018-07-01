@@ -31,7 +31,7 @@ namespace KDSWebApiMVC.Models
 
         public int tempoMedioPreparacaoEmMinutos { get; set; }
 
-        public IQueryable<ItemAdicional> adicionaisItem { get; set; }
-        public IQueryable<ItemInsumo> insumoItem { get; set; }
+        public List<ItemAdicional> adicionaisItem { get; set; }
+        public List<ItemInsumo> insumoItem { get; set; }
     }
 }

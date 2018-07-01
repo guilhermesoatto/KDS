@@ -22,7 +22,9 @@ namespace KDSWebApiMVC.Controllers
         private Servicos servicos = new Servicos();
 
         // GET: api/Comanda
-        public IQueryable<Comanda> GetComanda(string codigoStatusPedido, string canalAtendimento)
+        [HttpGet]
+        [ResponseType(typeof(Comanda))]
+        public IQueryable<Comanda> GetComanda(string codigoStatusPedido = null, string canalAtendimento = null)
         {
             if (!string.IsNullOrEmpty(codigoStatusPedido))
             {
