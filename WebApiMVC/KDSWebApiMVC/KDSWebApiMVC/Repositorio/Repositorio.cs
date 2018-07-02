@@ -283,8 +283,8 @@ namespace KDSWebApiMVC.Repositorio
 
         public Pedido PegaItensPorPedido(Pedido pedido)
         {
-            IQueryable<Item> itensPedido;
-            itensPedido = db.Item.Where(x => x.idPedido == pedido.idPedido);
+            List<Item> itensPedido;
+            itensPedido = db.Item.Where(x => x.idPedido == pedido.idPedido).ToList();
             if (itensPedido.Count() > 0)
                 foreach (var item in itensPedido)
                 {
