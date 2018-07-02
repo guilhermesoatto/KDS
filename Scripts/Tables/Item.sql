@@ -1,7 +1,7 @@
 USE [KDS]
 GO
 
-/****** Object:  Table [dbo].[Item]    Script Date: 27/06/2018 11:08:24 ******/
+/****** Object:  Table [dbo].[Item]    Script Date: 02/07/2018 11:08:27 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -23,9 +23,7 @@ CREATE TABLE [dbo].[Item](
 	[IdItem] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
-GO
 
-ALTER TABLE [dbo].[Item] ADD  CONSTRAINT [DF_Item_DataHoraInclusao]  DEFAULT (getdate()) FOR [DataHoraInclusao]
 GO
 
 ALTER TABLE [dbo].[Item]  WITH CHECK ADD  CONSTRAINT [FK_Pedio_ItemPedido] FOREIGN KEY([IdPedido])
@@ -37,4 +35,5 @@ GO
 
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Relacionamento da tabela de Pedidos nos Itens' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Item', @level2type=N'CONSTRAINT',@level2name=N'FK_Pedio_ItemPedido'
 GO
+
 

@@ -1,7 +1,7 @@
 USE [KDS]
 GO
 
-/****** Object:  Table [dbo].[ItemInsumo]    Script Date: 27/06/2018 11:08:51 ******/
+/****** Object:  Table [dbo].[ItemInsumo]    Script Date: 02/07/2018 11:09:05 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -20,6 +20,7 @@ CREATE TABLE [dbo].[ItemInsumo](
 	[IdInsumo] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
+
 GO
 
 ALTER TABLE [dbo].[ItemInsumo]  WITH CHECK ADD  CONSTRAINT [FK_Insumo_Item] FOREIGN KEY([IdItem])
@@ -28,4 +29,5 @@ GO
 
 ALTER TABLE [dbo].[ItemInsumo] CHECK CONSTRAINT [FK_Insumo_Item]
 GO
+
 
