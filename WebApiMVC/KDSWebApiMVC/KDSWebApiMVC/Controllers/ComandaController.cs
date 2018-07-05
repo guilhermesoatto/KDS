@@ -28,11 +28,11 @@ namespace KDSWebApiMVC.Controllers
         {
             if (!string.IsNullOrEmpty(codigoStatusPedido))
             {
-                //filtra pedido de comanda que possue itens neste estatos
+                return servicos.RetornaComandaPorStatus(codigoStatusPedido).AsQueryable();
             }
             else if (!string.IsNullOrEmpty(canalAtendimento))
             {
-                //filtra pedidos de comanda por canal de atedieto
+               return servicos.RetornaComandaPorCanal(canalAtendimento).AsQueryable();
             }
             return servicos.RetornaComandas();
 
