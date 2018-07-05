@@ -11,8 +11,13 @@ namespace KDSWebApiMVC.Models
     public class ItemAdicional
     {
         [Key]
+        [Column(Order = 1)]
         public int idAdicional { get; set; }
+
+        //[ForeignKey("Item")]
+        //[Column(Order = 1)]
         public int idItem { get; set; }
+
         [StringLength(150)]
         public string descricao { get; set; }
     }

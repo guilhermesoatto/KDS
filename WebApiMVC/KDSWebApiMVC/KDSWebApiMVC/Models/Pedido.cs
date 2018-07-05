@@ -10,9 +10,19 @@ namespace KDSWebApiMVC.Models
     [Table("dbo.Pedido")]
     public class Pedido
     {
+
+        //public Pedido()
+        //{
+        //    this.itensDoPedido = new HashSet<Item>();
+        //}
+
+
         [Key]
+        [Column(Order = 1)]
         public int idPedido { get; set; }
 
+        //[ForeignKey("idComanda")]
+        //[Column(Order = 1)]
         public int idComanda { get; set; }
 
         [StringLength(50)]
@@ -29,7 +39,7 @@ namespace KDSWebApiMVC.Models
         [DisplayFormat(DataFormatString = "{0:s}" )]
         public DateTime dataHoraInclusao { get; set; }
 
-        public List<Item> itensDoPedido { get; set; }
+        public virtual ICollection<Item> itensDoPedido { get; set; }
 
     }
 }

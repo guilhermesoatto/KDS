@@ -9,8 +9,20 @@ namespace KDSWebApiMVC.Models
     [Table("dbo.Item")]
     public class Item
     {
+
+        //public Item()
+        //{
+        //    this.adicionaisItem = new HashSet<ItemAdicional>();
+        //    this.insumoItem = new HashSet<ItemInsumo>();
+        //}
+
+
         [Key]
+        [Column(Order = 1)]
         public int idItem { get; set; }
+
+        //[ForeignKey("Pedido")]
+        //[Column(Order = 1)]
         public int idPedido { get; set; }
 
         [StringLength(50)]
@@ -31,7 +43,7 @@ namespace KDSWebApiMVC.Models
 
         public int tempoMedioPreparacaoEmMinutos { get; set; }
 
-        public List<ItemAdicional> adicionaisItem { get; set; }
-        public List<ItemInsumo> insumoItem { get; set; }
+        public ICollection<ItemAdicional> adicionaisItem { get; set; }
+        public ICollection<ItemInsumo> insumoItem { get; set; }
     }
 }

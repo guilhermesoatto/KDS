@@ -67,7 +67,7 @@ namespace KDSWebApiMVC.Controllers
 
 
         [Route("api/Pedido/NovoPedido")]
-        [HttpPost]
+        [HttpPut]
         public HttpResponseMessage NovoPedido(Comanda comanda,string canaldeEntrada)
         {
             var a = Request.Content.GetType();

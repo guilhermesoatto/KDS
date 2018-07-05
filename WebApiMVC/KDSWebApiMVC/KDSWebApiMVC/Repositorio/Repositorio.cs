@@ -136,6 +136,7 @@ namespace KDSWebApiMVC.Repositorio
             try
             {
                 db.SaveChanges();
+                db.Dispose();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -157,7 +158,7 @@ namespace KDSWebApiMVC.Repositorio
             try
             {                
                 gravaComanda.numeroComanda = comanda.numeroComanda;
-                //gravaComanda.dataHoraInclusao = DateTime.Now;
+                gravaComanda.dataHoraInclusao = DateTime.Now;
                 db.Comanda.Add(gravaComanda);
                 db.SaveChanges();
             }
@@ -283,8 +284,8 @@ namespace KDSWebApiMVC.Repositorio
 
         public Pedido PegaItensPorPedido(Pedido pedido)
         {
-            IQueryable<Item> itensPedido;
-            itensPedido = db.Item.Where(x => x.idPedido == pedido.idPedido);
+            List<Item> itensPedido;
+            itensPedido = db.Item.Where(x => x.idPedido == pedido.idPedido).ToList();
             if (itensPedido.Count() > 0)
                 foreach (var item in itensPedido)
                 {

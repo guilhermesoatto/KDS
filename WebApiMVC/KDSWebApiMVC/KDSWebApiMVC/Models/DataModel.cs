@@ -15,6 +15,7 @@ namespace KDSWebApiMVC.Models
         public DataModel()
             : base("name=SqlServer")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
 
         public System.Data.Entity.DbSet<KDSWebApiMVC.Models.Comanda> Comanda { get; set; }
@@ -25,10 +26,19 @@ namespace KDSWebApiMVC.Models
         public DbSet<ItemInsumo> ItemInsumo { get; set; }
         public DbSet<Status> Status { get; set; }
 
+
+
         // Add a DbSet for each entity type that you want to include in your model. For more information 
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         // public virtual DbSet<MyEntity> MyEntities { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            //modelBuilder.Entity<Pedido>().HasRequired(p => p.itensDoPedido).WithMany().HasForeignKey(f => f.idComanda);
+            //modelBuilder.Entity<Item>().HasRequired(p => p.adicionaisItem).WithMany().HasForeignKey(f => f.idPedido);
+            //modelBuilder.Entity<Item>().HasRequired(p => p.insumoItem).WithMany().HasForeignKey(f => f.idPedido);
+        }
     }
 
     //public class MyEntity

@@ -11,7 +11,11 @@ namespace KDSWebApiMVC.Models
     public class ItemInsumo
     {
         [Key]
+        [Column(Order = 1)]
         public int idInsumo { get; set; }
+
+        //[ForeignKey("Item")]
+        //[Column(Order = 1)]
         public int idItem { get; set; }
 
         [StringLength(50)]
