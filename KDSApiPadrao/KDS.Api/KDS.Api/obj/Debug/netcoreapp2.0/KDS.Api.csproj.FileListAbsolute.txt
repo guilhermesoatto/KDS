@@ -1,0 +1,11 @@
+D:\Git\KDS\KDSApiPadrao\KDS.Api\KDS.Api\bin\Debug\netcoreapp2.0\KDS.Api.deps.json
+D:\Git\KDS\KDSApiPadrao\KDS.Api\KDS.Api\bin\Debug\netcoreapp2.0\KDS.Api.runtimeconfig.json
+D:\Git\KDS\KDSApiPadrao\KDS.Api\KDS.Api\bin\Debug\netcoreapp2.0\KDS.Api.runtimeconfig.dev.json
+D:\Git\KDS\KDSApiPadrao\KDS.Api\KDS.Api\bin\Debug\netcoreapp2.0\KDS.Api.dll
+D:\Git\KDS\KDSApiPadrao\KDS.Api\KDS.Api\bin\Debug\netcoreapp2.0\KDS.Api.pdb
+D:\Git\KDS\KDSApiPadrao\KDS.Api\KDS.Api\obj\Debug\netcoreapp2.0\KDS.Api.csproj.CoreCompileInputs.cache
+D:\Git\KDS\KDSApiPadrao\KDS.Api\KDS.Api\obj\Debug\netcoreapp2.0\KDS.Api.AssemblyInfoInputs.cache
+D:\Git\KDS\KDSApiPadrao\KDS.Api\KDS.Api\obj\Debug\netcoreapp2.0\KDS.Api.AssemblyInfo.cs
+D:\Git\KDS\KDSApiPadrao\KDS.Api\KDS.Api\obj\Debug\netcoreapp2.0\KDS.Api.dll
+D:\Git\KDS\KDSApiPadrao\KDS.Api\KDS.Api\obj\Debug\netcoreapp2.0\KDS.Api.pdb
+D:\Git\KDS\KDSApiPadrao\KDS.Api\KDS.Api\obj\Debug\netcoreapp2.0\KDS.Api.csprojAssemblyReference.cache
