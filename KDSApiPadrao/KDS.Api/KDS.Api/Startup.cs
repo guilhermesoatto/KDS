@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using KDS.Api.Models;
+using KDS.Api.Repositorio.Interface;
+using KDS.Api.Services;
+using KDS.Api.Services.Interface;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using Microsoft.EntityFrameworkCore;
-using KDS.Api.Models;
-using Microsoft.EntityFrameworkCore.Infrastructure;
-using KDS.Api.Services;
 
 namespace KDS.Api
 {
@@ -31,11 +26,6 @@ namespace KDS.Api
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
 
-            //using (var db = new DataModel())
-            //{
-
-            //}
-
         }
 
         public IConfiguration Configuration { get; }
@@ -43,19 +33,25 @@ namespace KDS.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //var connection = Configuration["ConexaoSqlite:SqliteConnectionString"];
-            //services.AddDbContext<DataModel>(options =>
-            //    options.UseSqlite(connection)
-            //);
+
+            var connection = Configuration["ConexaoSqlite:SqliteConnectionString"];
+
+            services.AddDbContext<DataModel>(options =>
+                options.UseSqlite(connection)
+            );
+
+            services.AddScoped<IRepository, Repositorio.Repositorio>();
+            services.AddScoped<IService, Servicos>();
+
 
             services.AddMvc();
 
-            services.AddEntityFrameworkSqlite()
-            .AddDbContext<DataModel>();
+            //services.AddEntityFrameworkSqlite()
+            //.AddDbContext<DataModel>();
 
-            services.AddDbContext<DataModel>();
+            //services.AddDbContext<DataModel>();
 
-            services.AddMvc();
+            //services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

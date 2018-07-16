@@ -1,4 +1,5 @@
 ﻿using KDS.Api.Models;
+using KDS.Api.Repositorio.Interface;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,24 +8,14 @@ using System.Threading.Tasks;
 
 namespace KDS.Api.Repositorio
 {
-    public class Repositorio : IDisposable
+    public class Repositorio : IRepository
     {
-        //private DataModel db = new DataModel();
-
-        //private readonly DataModel db;
-        //private DbContext db = new DbContext;
-
         private readonly DataModel db;
-
         public Repositorio(DataModel _db)
         {
             db = _db;
         }
 
-        public void Dispose()
-        {
-            Dispose(true);
-        }
 
         #region UPDATES
         enum CodStatusPedido
@@ -314,15 +305,10 @@ namespace KDS.Api.Repositorio
             //}
 
         }
+
+      
         #endregion
 
-        protected void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            Dispose(disposing);
-        }
+
     }
 }

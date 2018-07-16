@@ -6,14 +6,8 @@ namespace KDS.Api.Models
     public partial class DataModel : DbContext
     {
 
-        //public DataModel()
-        //{
-
-        //}
-
         public DataModel(DbContextOptions<DataModel> options) : base(options)
         {
-            //this.Database.OpenConnection();
         }
 
         public DbSet<Comanda> Comanda { get; set; }
@@ -23,14 +17,14 @@ namespace KDS.Api.Models
         public DbSet<ItemInsumo> ItemInsumo { get; set; }
         public DbSet<Status> Status { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            var connectionStringBuilder = new SqliteConnectionStringBuilder { DataSource = "KDS.db" };
-            var connectionString = connectionStringBuilder.ToString();
-            var connection = new SqliteConnection(connectionString);
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //var connectionStringBuilder = new SqliteConnectionStringBuilder { DataSource = "KDS.db" };
+        //var connectionString = connectionStringBuilder.ToString();
+        //var connection = new SqliteConnection(connectionString);
 
-            optionsBuilder.UseSqlite(connection);
-        }
+        //optionsBuilder.UseSqlite(connection);
+        //}
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

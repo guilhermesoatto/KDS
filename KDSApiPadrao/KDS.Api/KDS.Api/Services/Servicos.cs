@@ -1,4 +1,6 @@
 ﻿using KDS.Api.Models;
+using KDS.Api.Repositorio.Interface;
+using KDS.Api.Services.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace KDS.Api.Services
 {
-    public class Servicos
+    public class Servicos : IService
     {
         //private Repositorio.Repositorio repositorio = new Repositorio.Repositorio();
 
-        private Repositorio.Repositorio repositorio;
+        private readonly IRepository repositorio;
 
-        public Servicos(Repositorio.Repositorio _repositorio)
+        public Servicos(IRepository _repositorio)
         {
             repositorio = _repositorio;
         }
@@ -93,5 +95,7 @@ namespace KDS.Api.Services
         {
             return repositorio.InserePedido(comanda, canaldeEntrada);
         }
+
+       
     }
 }

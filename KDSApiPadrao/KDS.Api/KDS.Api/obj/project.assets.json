@@ -2,17 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "EntityFramework/6.2.0": {
-        "type": "package",
-        "compile": {
-          "lib/net45/EntityFramework.SqlServer.dll": {},
-          "lib/net45/EntityFramework.dll": {}
-        },
-        "runtime": {
-          "lib/net45/EntityFramework.SqlServer.dll": {},
-          "lib/net45/EntityFramework.dll": {}
-        }
-      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -3198,18 +3187,6 @@
           }
         }
       },
-      "SQLite.CodeFirst/1.5.1.25": {
-        "type": "package",
-        "dependencies": {
-          "EntityFramework": "6.2.0"
-        },
-        "compile": {
-          "lib/net45/SQLite.CodeFirst.dll": {}
-        },
-        "runtime": {
-          "lib/net45/SQLite.CodeFirst.dll": {}
-        }
-      },
       "SQLitePCLRaw.bundle_green/1.1.11": {
         "type": "package",
         "dependencies": {
@@ -5155,33 +5132,6 @@
     }
   },
   "libraries": {
-    "EntityFramework/6.2.0": {
-      "sha512": "ptGyXOf26qLrtn+2doAmylIlCxOnBJANwlyyLrXDmqIk9O18IzLWHyxDwwAyhgXkxmbiaA0WNpRy67WRReInBw==",
-      "type": "package",
-      "path": "entityframework/6.2.0",
-      "files": [
-        "content/net40/App.config.transform",
-        "content/net40/Web.config.transform",
-        "entityframework.6.2.0.nupkg.sha512",
-        "entityframework.nuspec",
-        "lib/net40/EntityFramework.SqlServer.dll",
-        "lib/net40/EntityFramework.SqlServer.xml",
-        "lib/net40/EntityFramework.dll",
-        "lib/net40/EntityFramework.xml",
-        "lib/net45/EntityFramework.SqlServer.dll",
-        "lib/net45/EntityFramework.SqlServer.xml",
-        "lib/net45/EntityFramework.dll",
-        "lib/net45/EntityFramework.xml",
-        "tools/EntityFramework.PowerShell.Utility.dll",
-        "tools/EntityFramework.PowerShell.dll",
-        "tools/EntityFramework.psd1",
-        "tools/EntityFramework.psm1",
-        "tools/about_EntityFramework.help.txt",
-        "tools/init.ps1",
-        "tools/install.ps1",
-        "tools/migrate.exe"
-      ]
-    },
     "Libuv/1.10.0": {
       "sha512": "GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
       "type": "package",
@@ -5201,7 +5151,7 @@
       ]
     },
     "Microsoft.ApplicationInsights/2.4.0": {
-      "sha512": "LT6VgKElQHuTJW6Nldp+3SxT11f+Dn+317Gwe2sy7+HPSYdXByBblZ1BxBraRDArdfEwcW8Jwuzlh6oOWPOVQg==",
+      "sha512": "4dX/zu3Psz9oM3ErU64xfOHuSxOwMxN6q5RabSkeYbX42Yn6dR/kDToqjs+txCRjrfHUxyYjfeJHu+MbCfvAsg==",
       "type": "package",
       "path": "microsoft.applicationinsights/2.4.0",
       "files": [
@@ -5221,7 +5171,7 @@
       ]
     },
     "Microsoft.ApplicationInsights.AspNetCore/2.1.1": {
-      "sha512": "mSWPZOxM9+On7Acop8YmydM8fZKfj8f3IJs2y8VzoFdaMMmf1eq6P8x3BbCwkQoYQqbpUSWlM7va8mf9pQINyg==",
+      "sha512": "kiGmzl9Cav34dF7AHVMoJxdJJQEeLB8KZGNwX1LjImG9iem5hGk4DkHpW7/m9Nh3DrL8IKSL3mqQo+IPqWfMRQ==",
       "type": "package",
       "path": "microsoft.applicationinsights.aspnetcore/2.1.1",
       "files": [
@@ -5234,7 +5184,7 @@
       ]
     },
     "Microsoft.ApplicationInsights.DependencyCollector/2.4.1": {
-      "sha512": "+FAnVNAHn1nFkjUV/Nw5OpYO/wBuPiBAGFtIkzJUOMNIdLmL0Ooa50e4z1e7IaeFM7pBV1GJHg65mpD0dT8meQ==",
+      "sha512": "RWxdX90MY6tNF8S5lwRvJcHiBMIWwVLCxd4TGIEl3X0yAKaolY2vs4zTCvyCIVkEAMs1aInTgWkYwOjzYvAHWw==",
       "type": "package",
       "path": "microsoft.applicationinsights.dependencycollector/2.4.1",
       "files": [
@@ -8649,17 +8599,6 @@
         "version.txt"
       ]
     },
-    "SQLite.CodeFirst/1.5.1.25": {
-      "sha512": "KhuSCWeCObfDqwZvD9ZTgI4FikSNoX4TtqqElfDnHHKWn0xS9mD4LX7X9CfxGU5zROAJk0d5QLJy4GiG/asA/g==",
-      "type": "package",
-      "path": "sqlite.codefirst/1.5.1.25",
-      "files": [
-        "lib/net40/SQLite.CodeFirst.dll",
-        "lib/net45/SQLite.CodeFirst.dll",
-        "sqlite.codefirst.1.5.1.25.nupkg.sha512",
-        "sqlite.codefirst.nuspec"
-      ]
-    },
     "SQLitePCLRaw.bundle_green/1.1.11": {
       "sha512": "Hqp8IF/RLjbypkLm+t+1RqAX8EKuWEkj7wkLXplfENQoPnE127cvTmaDvaQKtt7a5QsD/HNjFDr1z5f9q2wdPg==",
       "type": "package",
@@ -11883,7 +11822,7 @@
       ]
     },
     "System.Runtime.Serialization.Formatters/4.3.0": {
-      "sha512": "/ZtH2u8YjN2DSxlhcl66x8f6exqja4KjPVlAv3QKpVvBezjwQxbtLdKXvx3oeAbkXSkzUx5eoJckKoZBFQrcGg==",
+      "sha512": "KT591AkTNFOTbhZlaeMVvfax3RqhH1EJlcwF50Wm7sfnBLuHiOeZRRKrr1ns3NESkM20KPZ5Ol/ueMq5vg4QoQ==",
       "type": "package",
       "path": "system.runtime.serialization.formatters/4.3.0",
       "files": [
@@ -12342,7 +12281,7 @@
       ]
     },
     "System.Security.Cryptography.Xml/4.4.2": {
-      "sha512": "q9Dren/YP5jhRCkDvLfuaPpMTQzP97ANvzq/OoGgwK8YdLRSTABS9oW5/23OKoM2DRCuBrh4qaecD2YNhPtuzQ==",
+      "sha512": "1m+fKVrApgKYMRuE0MF0vGjqy4XqAp1rCtyAzMXhJajMDDytMh/rHk9hp4M7KKk3QQZoWJUvyUY7xcw74w+JiQ==",
       "type": "package",
       "path": "system.security.cryptography.xml/4.4.2",
       "files": [
@@ -13137,7 +13076,7 @@
       ]
     },
     "System.ValueTuple/4.4.0": {
-      "sha512": "wHs7aCjqUmUawUvnDGrmsMVB63FDKcksJhCd5S9AOsOeYRx+TFG27m4ri2ZTRFZRSGNzskuGsZlJQZsQcV6Olg==",
+      "sha512": "BahUww/+mdP4ARCAh2RQhQTg13wYLVrBb9SYVgW8ZlrwjraGCXHGjo0oIiUfZ34LUZkMMR+RAzR7dEY4S1HeQQ==",
       "type": "package",
       "path": "system.valuetuple/4.4.0",
       "files": [
@@ -13424,7 +13363,7 @@
       ]
     },
     "System.Xml.XPath/4.3.0": {
-      "sha512": "pG0aJ2p36HwmW/lG3dn/w/O1VcBo2Fe8R7igxhgBJHY4OJ9KZ2WNhZ+iXLi1NlTeXxnzGlF7tTfam0O60yLrGw==",
+      "sha512": "v1JQ5SETnQusqmS3RwStF7vwQ3L02imIzl++sewmt23VGygix04pEH+FCj1yWb+z4GDzKiljr1W7Wfvrx0YwgA==",
       "type": "package",
       "path": "system.xml.xpath/4.3.0",
       "files": [
@@ -13530,28 +13469,27 @@
       "Microsoft.EntityFrameworkCore.Tools >= 2.1.1",
       "Microsoft.EntityFrameworkCore.Tools.DotNet >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3",
-      "SQLite.CodeFirst >= 1.5.1.25"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Guto\\.nuget\\packages\\": {},
+    "C:\\Users\\mazza.pedro\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\KDS\\KDSApiPadrao\\KDS.Api\\KDS.Api\\KDS.Api.csproj",
+      "projectUniqueName": "C:\\Projetos MazzaFc\\Bematech\\KDS\\KDSApiPadrao\\KDS.Api\\KDS.Api\\KDS.Api.csproj",
       "projectName": "KDS.Api",
-      "projectPath": "D:\\Git\\KDS\\KDSApiPadrao\\KDS.Api\\KDS.Api\\KDS.Api.csproj",
-      "packagesPath": "C:\\Users\\Guto\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\KDS\\KDSApiPadrao\\KDS.Api\\KDS.Api\\obj\\",
+      "projectPath": "C:\\Projetos MazzaFc\\Bematech\\KDS\\KDSApiPadrao\\KDS.Api\\KDS.Api\\KDS.Api.csproj",
+      "packagesPath": "C:\\Users\\mazza.pedro\\.nuget\\packages\\",
+      "outputPath": "C:\\Projetos MazzaFc\\Bematech\\KDS\\KDSApiPadrao\\KDS.Api\\KDS.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Guto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mazza.pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13559,10 +13497,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://nugetserverdotnetcore.azurewebsites.net/nuget": {},
-        "http://platform.bematech.com.br/nuget/nuget": {},
-        "https://www.myget.org/feed/Packages/tnfdev": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
@@ -13614,10 +13549,6 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.0.3, )"
-          },
-          "SQLite.CodeFirst": {
-            "target": "Package",
-            "version": "[1.5.1.25, )"
           }
         },
         "imports": [
@@ -13627,27 +13558,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'EntityFramework 6.2.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "EntityFramework",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'SQLite.CodeFirst 1.5.1.25' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "SQLite.CodeFirst",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }

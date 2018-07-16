@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "d655d2a8fb017270f9cfcdce9cf91c60d5f1b7c9"
+    "signature": "2d1ab9a0f3737e38db658a04adb8576f9047bea4"
   },
   "compilationOptions": {
     "defines": [
@@ -31,24 +31,13 @@
           "Microsoft.EntityFrameworkCore.Tools": "2.1.1",
           "Microsoft.EntityFrameworkCore.Tools.DotNet": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.3",
-          "SQLite.CodeFirst": "1.5.1.25"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.3"
         },
         "runtime": {
           "KDS.Api.dll": {}
         },
         "compile": {
           "KDS.Api.dll": {}
-        }
-      },
-      "EntityFramework/6.2.0": {
-        "runtime": {
-          "lib/net45/EntityFramework.SqlServer.dll": {},
-          "lib/net45/EntityFramework.dll": {}
-        },
-        "compile": {
-          "lib/net45/EntityFramework.SqlServer.dll": {},
-          "lib/net45/EntityFramework.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -2751,17 +2740,6 @@
           }
         }
       },
-      "SQLite.CodeFirst/1.5.1.25": {
-        "dependencies": {
-          "EntityFramework": "6.2.0"
-        },
-        "runtime": {
-          "lib/net45/SQLite.CodeFirst.dll": {}
-        },
-        "compile": {
-          "lib/net45/SQLite.CodeFirst.dll": {}
-        }
-      },
       "SQLitePCLRaw.bundle_green/1.1.11": {
         "dependencies": {
           "SQLitePCLRaw.core": "1.1.11",
@@ -4361,13 +4339,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "EntityFramework/6.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ptGyXOf26qLrtn+2doAmylIlCxOnBJANwlyyLrXDmqIk9O18IzLWHyxDwwAyhgXkxmbiaA0WNpRy67WRReInBw==",
-      "path": "entityframework/6.2.0",
-      "hashPath": "entityframework.6.2.0.nupkg.sha512"
-    },
     "Libuv/1.10.0": {
       "type": "package",
       "serviceable": true,
@@ -4378,21 +4349,21 @@
     "Microsoft.ApplicationInsights/2.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LT6VgKElQHuTJW6Nldp+3SxT11f+Dn+317Gwe2sy7+HPSYdXByBblZ1BxBraRDArdfEwcW8Jwuzlh6oOWPOVQg==",
+      "sha512": "sha512-4dX/zu3Psz9oM3ErU64xfOHuSxOwMxN6q5RabSkeYbX42Yn6dR/kDToqjs+txCRjrfHUxyYjfeJHu+MbCfvAsg==",
       "path": "microsoft.applicationinsights/2.4.0",
       "hashPath": "microsoft.applicationinsights.2.4.0.nupkg.sha512"
     },
     "Microsoft.ApplicationInsights.AspNetCore/2.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mSWPZOxM9+On7Acop8YmydM8fZKfj8f3IJs2y8VzoFdaMMmf1eq6P8x3BbCwkQoYQqbpUSWlM7va8mf9pQINyg==",
+      "sha512": "sha512-kiGmzl9Cav34dF7AHVMoJxdJJQEeLB8KZGNwX1LjImG9iem5hGk4DkHpW7/m9Nh3DrL8IKSL3mqQo+IPqWfMRQ==",
       "path": "microsoft.applicationinsights.aspnetcore/2.1.1",
       "hashPath": "microsoft.applicationinsights.aspnetcore.2.1.1.nupkg.sha512"
     },
     "Microsoft.ApplicationInsights.DependencyCollector/2.4.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+FAnVNAHn1nFkjUV/Nw5OpYO/wBuPiBAGFtIkzJUOMNIdLmL0Ooa50e4z1e7IaeFM7pBV1GJHg65mpD0dT8meQ==",
+      "sha512": "sha512-RWxdX90MY6tNF8S5lwRvJcHiBMIWwVLCxd4TGIEl3X0yAKaolY2vs4zTCvyCIVkEAMs1aInTgWkYwOjzYvAHWw==",
       "path": "microsoft.applicationinsights.dependencycollector/2.4.1",
       "hashPath": "microsoft.applicationinsights.dependencycollector.2.4.1.nupkg.sha512"
     },
@@ -5782,13 +5753,6 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
     },
-    "SQLite.CodeFirst/1.5.1.25": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-KhuSCWeCObfDqwZvD9ZTgI4FikSNoX4TtqqElfDnHHKWn0xS9mD4LX7X9CfxGU5zROAJk0d5QLJy4GiG/asA/g==",
-      "path": "sqlite.codefirst/1.5.1.25",
-      "hashPath": "sqlite.codefirst.1.5.1.25.nupkg.sha512"
-    },
     "SQLitePCLRaw.bundle_green/1.1.11": {
       "type": "package",
       "serviceable": true,
@@ -6296,7 +6260,7 @@
     "System.Runtime.Serialization.Formatters/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/ZtH2u8YjN2DSxlhcl66x8f6exqja4KjPVlAv3QKpVvBezjwQxbtLdKXvx3oeAbkXSkzUx5eoJckKoZBFQrcGg==",
+      "sha512": "sha512-KT591AkTNFOTbhZlaeMVvfax3RqhH1EJlcwF50Wm7sfnBLuHiOeZRRKrr1ns3NESkM20KPZ5Ol/ueMq5vg4QoQ==",
       "path": "system.runtime.serialization.formatters/4.3.0",
       "hashPath": "system.runtime.serialization.formatters.4.3.0.nupkg.sha512"
     },
@@ -6380,7 +6344,7 @@
     "System.Security.Cryptography.Xml/4.4.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-q9Dren/YP5jhRCkDvLfuaPpMTQzP97ANvzq/OoGgwK8YdLRSTABS9oW5/23OKoM2DRCuBrh4qaecD2YNhPtuzQ==",
+      "sha512": "sha512-1m+fKVrApgKYMRuE0MF0vGjqy4XqAp1rCtyAzMXhJajMDDytMh/rHk9hp4M7KKk3QQZoWJUvyUY7xcw74w+JiQ==",
       "path": "system.security.cryptography.xml/4.4.2",
       "hashPath": "system.security.cryptography.xml.4.4.2.nupkg.sha512"
     },
@@ -6492,7 +6456,7 @@
     "System.ValueTuple/4.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wHs7aCjqUmUawUvnDGrmsMVB63FDKcksJhCd5S9AOsOeYRx+TFG27m4ri2ZTRFZRSGNzskuGsZlJQZsQcV6Olg==",
+      "sha512": "sha512-BahUww/+mdP4ARCAh2RQhQTg13wYLVrBb9SYVgW8ZlrwjraGCXHGjo0oIiUfZ34LUZkMMR+RAzR7dEY4S1HeQQ==",
       "path": "system.valuetuple/4.4.0",
       "hashPath": "system.valuetuple.4.4.0.nupkg.sha512"
     },
@@ -6527,7 +6491,7 @@
     "System.Xml.XPath/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pG0aJ2p36HwmW/lG3dn/w/O1VcBo2Fe8R7igxhgBJHY4OJ9KZ2WNhZ+iXLi1NlTeXxnzGlF7tTfam0O60yLrGw==",
+      "sha512": "sha512-v1JQ5SETnQusqmS3RwStF7vwQ3L02imIzl++sewmt23VGygix04pEH+FCj1yWb+z4GDzKiljr1W7Wfvrx0YwgA==",
       "path": "system.xml.xpath/4.3.0",
       "hashPath": "system.xml.xpath.4.3.0.nupkg.sha512"
     },

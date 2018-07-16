@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using KDS.Api.Models;
 using KDS.Api.Services;
+using KDS.Api.Services.Interface;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KDS.Api.Controllers
@@ -14,35 +15,19 @@ namespace KDS.Api.Controllers
     public class ValuesController : Controller
     {
 
-        private readonly DataModel _db;
-        private readonly Servicos servicos;
+        private readonly IService servicos;
 
-        public ValuesController(DataModel db, Servicos _servicos)
+        public ValuesController(IService _servicos)
         {
-            _db = db;
             servicos = _servicos;
         }
 
 
-        //private Servicos servicos;
-
-        //public ValuesController(Servicos _servicos)
-        //{
-        //    servicos = _servicos;
-        //}
-
-        
-
-        //public ValuesController(Servicos _servicos)
-        //{
-        //    servicos = _servicos;
-        //}
-
         // GET api/values
         [HttpGet("api/values")]
-        public List<Comanda> Get()
+        public IQueryable<Comanda> Get()
         {
-            var h = _db.Comanda.ToList();
+            var h = servicos.RetornaComandas();
             return h;
 
             //return new string[] { "value1", "value2" };
@@ -54,14 +39,14 @@ namespace KDS.Api.Controllers
         [HttpGet("api/Comanda")]
         public IQueryable<Comanda> GetComanda(string codigoStatusPedido = null, string canalAtendimento = null)
         {
-            if (!string.IsNullOrEmpty(codigoStatusPedido))
-            {
-                return servicos.RetornaComandaPorStatus(codigoStatusPedido).AsQueryable();
-            }
-            else if (!string.IsNullOrEmpty(canalAtendimento))
-            {
-                return servicos.RetornaComandaPorCanal(canalAtendimento).AsQueryable();
-            }
+            //if (!string.IsNullOrEmpty(codigoStatusPedido))
+            //{
+            //    return servicos.RetornaComandaPorStatus(codigoStatusPedido).AsQueryable();
+            //}
+            //else if (!string.IsNullOrEmpty(canalAtendimento))
+            //{
+            //    return servicos.RetornaComandaPorCanal(canalAtendimento).AsQueryable();
+            //}
             return servicos.RetornaComandas();
 
             // return JsonConvert.SerializeObject(comandas,Formatting.Indented);
@@ -82,41 +67,42 @@ namespace KDS.Api.Controllers
         }
 
         // PUT: api/Pedido/5/item/50/AlteraStatusItem/2
-        //[Route("api/Pedido/{idPedido}/item/{idItem}/AlteraStatusItem/{idStatus}")]
-        [HttpPut ("api/Pedido/{idPedido}/item/{idItem}/AlteraStatusItem/{idStatus}")]
+        [Route("api/Pedido/{idPedido}/item/{idItem}/AlteraStatusItem/{idStatus}")]
+        [HttpPut("api/Pedido/{idPedido}/item/{idItem}/AlteraStatusItem/{idStatus}")]
         public HttpResponseMessage AlteraStatusItem(int idPedido, int idItem, int idStatus)
         {
             if (servicos.AlteraStatusItem(idPedido, idItem, idStatus) == false)
             {
-                return new HttpResponseMessage (HttpStatusCode.BadRequest);
+                return new HttpResponseMessage(HttpStatusCode.BadRequest);
             }
 
-            return new HttpResponseMessage (HttpStatusCode.OK);
+            return new HttpResponseMessage(HttpStatusCode.OK);
 
         }
 
-        // PUT: api/Pedido/5/AlteraStatusPedido/2
-        //[Route("api/Pedido/{idPedido}/AlteraStatusPedido/{idStatus}")]
+        //// PUT: api/Pedido/5/AlteraStatusPedido/2
+        [Route("api/Pedido/{idPedido}/AlteraStatusPedido/{idStatus}")]
         [HttpPut("api/Pedido/{idPedido}/AlteraStatusPedido/{idStatus}")]
         public HttpResponseMessage AlteraStatusPedido(int idPedido, int idStatus)
         {
             if (servicos.AlteraStatusPedido(idPedido, idStatus) == false)
             {
-                return new HttpResponseMessage (HttpStatusCode.BadRequest);
+                return new HttpResponseMessage(HttpStatusCode.BadRequest);
             }
 
-            return new HttpResponseMessage (HttpStatusCode.OK);
+            return new HttpResponseMessage(HttpStatusCode.OK);
 
         }
 
 
-        //[Route("api/Pedido/NovoPedido")]
-        [HttpPut("api/Pedido/NovoPedido")]
-        public HttpResponseMessage NovoPedido(Comanda comanda, string canaldeEntrada)
+        [Route("api/Pedido/NovoPedido")]
+        [HttpPost]
+        //[ProducesResponseType(typeof(Comanda))]
+        public HttpResponseMessage NovoPedido([FromBody]Comanda comanda)
         {
             //var a = Request.ContentType.GetType();
 
-            if (servicos.InserePedido(comanda, canaldeEntrada) == null)
+            if (servicos.InserePedido(comanda, "ATM") == null)
             {
                 return new HttpResponseMessage(HttpStatusCode.BadRequest);
             }
@@ -126,29 +112,29 @@ namespace KDS.Api.Controllers
 
         #endregion
 
-        // GET api/values/5
-        //[HttpGet("{id}")]
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
+        //GET api/values/5
+        [HttpGet("{id}")]
+        public string Get(int id)
+        {
+            return "value";
+        }
 
-        //// POST api/values
-        //[HttpPost]
-        //public void Post([FromBody]string value)
-        //{
-        //}
+        // POST api/values
+        [HttpPost]
+        public void Post([FromBody]string value)
+        {
+        }
 
-        //// PUT api/values/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody]string value)
-        //{
-        //}
+        // PUT api/values/5
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody]string value)
+        {
+        }
 
-        //// DELETE api/values/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
+        // DELETE api/values/5
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
+        }
     }
 }

@@ -9,3 +9,14 @@ D:\Git\KDS\KDSApiPadrao\KDS.Api\KDS.Api\obj\Debug\netcoreapp2.0\KDS.Api.Assembly
 D:\Git\KDS\KDSApiPadrao\KDS.Api\KDS.Api\obj\Debug\netcoreapp2.0\KDS.Api.dll
 D:\Git\KDS\KDSApiPadrao\KDS.Api\KDS.Api\obj\Debug\netcoreapp2.0\KDS.Api.pdb
 D:\Git\KDS\KDSApiPadrao\KDS.Api\KDS.Api\obj\Debug\netcoreapp2.0\KDS.Api.csprojAssemblyReference.cache
+C:\Projetos MazzaFc\Bematech\KDS\KDSApiPadrao\KDS.Api\KDS.Api\obj\Debug\netcoreapp2.0\KDS.Api.csproj.CoreCompileInputs.cache
+C:\Projetos MazzaFc\Bematech\KDS\KDSApiPadrao\KDS.Api\KDS.Api\obj\Debug\netcoreapp2.0\KDS.Api.AssemblyInfoInputs.cache
+C:\Projetos MazzaFc\Bematech\KDS\KDSApiPadrao\KDS.Api\KDS.Api\obj\Debug\netcoreapp2.0\KDS.Api.AssemblyInfo.cs
+C:\Projetos MazzaFc\Bematech\KDS\KDSApiPadrao\KDS.Api\KDS.Api\bin\Debug\netcoreapp2.0\KDS.Api.deps.json
+C:\Projetos MazzaFc\Bematech\KDS\KDSApiPadrao\KDS.Api\KDS.Api\bin\Debug\netcoreapp2.0\KDS.Api.runtimeconfig.json
+C:\Projetos MazzaFc\Bematech\KDS\KDSApiPadrao\KDS.Api\KDS.Api\bin\Debug\netcoreapp2.0\KDS.Api.runtimeconfig.dev.json
+C:\Projetos MazzaFc\Bematech\KDS\KDSApiPadrao\KDS.Api\KDS.Api\bin\Debug\netcoreapp2.0\KDS.Api.dll
+C:\Projetos MazzaFc\Bematech\KDS\KDSApiPadrao\KDS.Api\KDS.Api\bin\Debug\netcoreapp2.0\KDS.Api.pdb
+C:\Projetos MazzaFc\Bematech\KDS\KDSApiPadrao\KDS.Api\KDS.Api\obj\Debug\netcoreapp2.0\KDS.Api.dll
+C:\Projetos MazzaFc\Bematech\KDS\KDSApiPadrao\KDS.Api\KDS.Api\obj\Debug\netcoreapp2.0\KDS.Api.pdb
+C:\Projetos MazzaFc\Bematech\KDS\KDSApiPadrao\KDS.Api\KDS.Api\obj\Debug\netcoreapp2.0\KDS.Api.csprojAssemblyReference.cache

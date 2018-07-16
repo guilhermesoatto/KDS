@@ -10,15 +10,10 @@ namespace KDS.Api.Models
     [Table("Comanda")]
     public class Comanda
     {
-        //public Comanda()
-        //{
-        //    this.pedidos = new HashSet<Pedido>();
-        //}
+        public Comanda()
+        {
 
-        //public Comanda()
-        //{
-        //    pedidos = new HashSet<Pedido>();
-        //}
+        }
 
         [Key]
         [Column(Order = 1)]
