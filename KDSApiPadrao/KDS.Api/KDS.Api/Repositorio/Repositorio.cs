@@ -11,8 +11,15 @@ namespace KDS.Api.Repositorio
     {
         //private DataModel db = new DataModel();
 
-        private readonly DataModel db;
+        //private readonly DataModel db;
         //private DbContext db = new DbContext;
+
+        private readonly DataModel db;
+
+        public Repositorio(DataModel _db)
+        {
+            db = _db;
+        }
 
         public void Dispose()
         {
@@ -300,11 +307,11 @@ namespace KDS.Api.Repositorio
 
         public IQueryable<Comanda> RetornaComandas()
         {
-            using (var db = new DataModel())
-            {
+            //using (var db = new DataModel())
+            //{
                 db.Database.OpenConnection();
                 return db.Comanda;
-            }
+            //}
 
         }
         #endregion

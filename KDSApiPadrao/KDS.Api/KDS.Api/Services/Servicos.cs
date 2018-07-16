@@ -8,7 +8,14 @@ namespace KDS.Api.Services
 {
     public class Servicos
     {
-        private Repositorio.Repositorio repositorio = new Repositorio.Repositorio();
+        //private Repositorio.Repositorio repositorio = new Repositorio.Repositorio();
+
+        private Repositorio.Repositorio repositorio;
+
+        public Servicos(Repositorio.Repositorio _repositorio)
+        {
+            repositorio = _repositorio;
+        }
 
         /// <summary>
         /// Retorna todos os pedidos e seus itens
@@ -68,7 +75,7 @@ namespace KDS.Api.Services
                 //comanda.pedidos = new List<Pedido>();
                 comanda.pedidos = RetornaPedidos().Where(x => x.idComanda == comanda.idComanda).ToList();
             }
-            return comandas.AsQueryable(); ;
+            return comandas.AsQueryable();
         }
 
         public bool AlteraStatusItem(int idPedido, int idItem, int idStatus)

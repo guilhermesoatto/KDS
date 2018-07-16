@@ -14,13 +14,38 @@ namespace KDS.Api.Controllers
     public class ValuesController : Controller
     {
 
-        private Servicos servicos = new Servicos();
+        private readonly DataModel _db;
+        private readonly Servicos servicos;
+
+        public ValuesController(DataModel db, Servicos _servicos)
+        {
+            _db = db;
+            servicos = _servicos;
+        }
+
+
+        //private Servicos servicos;
+
+        //public ValuesController(Servicos _servicos)
+        //{
+        //    servicos = _servicos;
+        //}
+
+        
+
+        //public ValuesController(Servicos _servicos)
+        //{
+        //    servicos = _servicos;
+        //}
 
         // GET api/values
         [HttpGet("api/values")]
-        public IEnumerable<string> Get()
+        public List<Comanda> Get()
         {
-            return new string[] { "value1", "value2" };
+            var h = _db.Comanda.ToList();
+            return h;
+
+            //return new string[] { "value1", "value2" };
         }
 
 

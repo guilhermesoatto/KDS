@@ -1,23 +1,19 @@
 ﻿using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
-using SQLite.CodeFirst;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace KDS.Api.Models
 {
     public partial class DataModel : DbContext
     {
 
-        public DataModel()
-        {
-            this.Database.OpenConnection();
-        }
+        //public DataModel()
+        //{
+
+        //}
 
         public DataModel(DbContextOptions<DataModel> options) : base(options)
         {
+            //this.Database.OpenConnection();
         }
 
         public DbSet<Comanda> Comanda { get; set; }
