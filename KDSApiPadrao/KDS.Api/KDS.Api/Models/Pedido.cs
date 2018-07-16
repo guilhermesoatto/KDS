@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace KDS.Api.Models
 {
+    [Table("Pedido")]
     public class Pedido
     {
         //public Pedido()

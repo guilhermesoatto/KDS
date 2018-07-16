@@ -300,7 +300,12 @@ namespace KDS.Api.Repositorio
 
         public IQueryable<Comanda> RetornaComandas()
         {
-            return db.Comanda;
+            using (var db = new DataModel())
+            {
+                db.Database.OpenConnection();
+                return db.Comanda;
+            }
+
         }
         #endregion
 

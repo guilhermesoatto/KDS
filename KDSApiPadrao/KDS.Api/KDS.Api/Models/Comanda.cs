@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace KDS.Api.Models
 {
+    [Table("Comanda")]
     public class Comanda
     {
         //public Comanda()

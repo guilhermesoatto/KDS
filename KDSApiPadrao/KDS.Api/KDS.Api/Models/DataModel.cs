@@ -8,9 +8,14 @@ using System.Threading.Tasks;
 
 namespace KDS.Api.Models
 {
-    public class DataModel : DbContext
+    public partial class DataModel : DbContext
     {
-        
+
+        public DataModel()
+        {
+            this.Database.OpenConnection();
+        }
+
         public DataModel(DbContextOptions<DataModel> options) : base(options)
         {
         }
