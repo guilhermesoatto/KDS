@@ -9,7 +9,10 @@ namespace KDS.Api.Repositorio
 {
     public class Repositorio : IDisposable
     {
-        private DataModel db;
+        //private DataModel db = new DataModel();
+
+        private readonly DataModel db;
+        //private DbContext db = new DbContext;
 
         public void Dispose()
         {

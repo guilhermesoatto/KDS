@@ -31,10 +31,14 @@ namespace KDS.Api
                 options.UseSqlite(connection)
             );
 
-            services.AddMvc();
+            //services.AddMvc();
 
             services.AddEntityFrameworkSqlite()
             .AddDbContext<DataModel>();
+
+            services.AddDbContext<DataModel>();
+
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

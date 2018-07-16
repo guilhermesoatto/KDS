@@ -10,7 +10,7 @@ namespace KDS.Api.Models
 {
     public class DataModel : DbContext
     {
-
+        
         public DataModel(DbContextOptions<DataModel> options) : base(options)
         {
         }
