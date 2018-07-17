@@ -12,8 +12,8 @@ namespace KDS.Api.Services.Interface
         IQueryable<Comanda> RetornaComandas();
         IQueryable<Comanda> RetornaComandaPorCanal(string canalAtendimento);
         IQueryable<Comanda> RetornaComandaPorStatus(string codigoStatusPedido);
-        bool AlteraStatusItem(int idPedido, int idItem, int idStatus);
-        bool AlteraStatusPedido(int idPedido, int idStatus);
+        bool AlteraStatusItem(long idPedido, long idItem, long idStatus);
+        bool AlteraStatusPedido(long idPedido, long idStatus);
         Comanda InserePedido(Comanda comanda, string canaldeEntrada);
 
     }

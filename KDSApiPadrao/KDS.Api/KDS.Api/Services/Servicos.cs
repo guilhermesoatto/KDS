@@ -83,12 +83,12 @@ namespace KDS.Api.Services
             return comandas.AsQueryable();
         }
 
-        public bool AlteraStatusItem(int idPedido, int idItem, int idStatus)
+        public bool AlteraStatusItem(long idPedido, long idItem, long idStatus)
         {
             return repositorio.AlteraStatusItem(idPedido, idItem, idStatus);
         }
 
-        public bool AlteraStatusPedido(int idPedido, int idStatus)
+        public bool AlteraStatusPedido(long idPedido, long idStatus)
         {
             var pedido = RetornaPedidos().FirstOrDefault(x => x.idPedido == idPedido);
             return repositorio.AlteraStatusPedido(pedido, idStatus);

@@ -34,7 +34,7 @@ namespace KDS.Api.Repositorio
         /// <param name="idItem">Id Item</param>
         /// <param name="idStatus">id Status</param>
         /// <returns></returns>
-        public bool AlteraStatusItem(int idPedido, int idItem, int idStatus)
+        public bool AlteraStatusItem(long idPedido, long idItem, long idStatus)
         {
 
             if (idPedido == 0 || idItem == 0)
@@ -69,7 +69,7 @@ namespace KDS.Api.Repositorio
         /// <param name="pedido">Classe Pedidos</param>
         /// <param name="idStatus">Id Status</param>
         /// <returns></returns>
-        public bool AlteraStatusPedido(Pedido pedido, int idStatus = 0)
+        public bool AlteraStatusPedido(Pedido pedido, long idStatus = 0)
         {
 
             /*

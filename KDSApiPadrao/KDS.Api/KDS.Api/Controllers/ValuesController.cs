@@ -68,7 +68,7 @@ namespace KDS.Api.Controllers
         // PUT: api/Pedido/5/item/50/AlteraStatusItem/2
         [Route("api/Pedido/{idPedido}/item/{idItem}/AlteraStatusItem/{idStatus}")]
         [HttpPut("api/Pedido/{idPedido}/item/{idItem}/AlteraStatusItem/{idStatus}")]
-        public HttpResponseMessage AlteraStatusItem(int idPedido, int idItem, int idStatus)
+        public HttpResponseMessage AlteraStatusItem(long idPedido, long idItem, long idStatus)
         {
             if (servicos.AlteraStatusItem(idPedido, idItem, idStatus) == false)
             {
@@ -82,7 +82,7 @@ namespace KDS.Api.Controllers
         //// PUT: api/Pedido/5/AlteraStatusPedido/2
         [Route("api/Pedido/{idPedido}/AlteraStatusPedido/{idStatus}")]
         [HttpPut("api/Pedido/{idPedido}/AlteraStatusPedido/{idStatus}")]
-        public HttpResponseMessage AlteraStatusPedido(int idPedido, int idStatus)
+        public HttpResponseMessage AlteraStatusPedido(long idPedido, long idStatus)
         {
             if (servicos.AlteraStatusPedido(idPedido, idStatus) == false)
             {
