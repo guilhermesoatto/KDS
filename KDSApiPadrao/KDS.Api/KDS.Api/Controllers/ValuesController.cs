@@ -37,21 +37,20 @@ namespace KDS.Api.Controllers
 
         #region Comanda
         [HttpGet("api/Comanda")]
-        public IQueryable<Comanda> GetComanda(string codigoStatusPedido = null, string canalAtendimento = null)
+        public IQueryable<Comanda> GetComanda([FromQuery]string codigoStatusPedido, [FromQuery]string canalAtendimento)
         {
-            //if (!string.IsNullOrEmpty(codigoStatusPedido))
-            //{
-            //    return servicos.RetornaComandaPorStatus(codigoStatusPedido).AsQueryable();
-            //}
-            //else if (!string.IsNullOrEmpty(canalAtendimento))
-            //{
-            //    return servicos.RetornaComandaPorCanal(canalAtendimento).AsQueryable();
-            //}
+            if (!string.IsNullOrEmpty(codigoStatusPedido))
+            {
+                return servicos.RetornaComandaPorStatus(codigoStatusPedido).AsQueryable();
+            }
+            else if (!string.IsNullOrEmpty(canalAtendimento))
+            {
+                return servicos.RetornaComandaPorCanal(canalAtendimento).AsQueryable();
+            }
             return servicos.RetornaComandas();
-
             // return JsonConvert.SerializeObject(comandas,Formatting.Indented);
         }
-
+        
         #endregion
 
 

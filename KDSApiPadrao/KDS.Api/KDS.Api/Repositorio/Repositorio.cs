@@ -306,7 +306,35 @@ namespace KDS.Api.Repositorio
 
         }
 
-      
+        public IQueryable<Comanda> RetornaComandaPorStatus(string codigoStatusPedido)
+        {
+            //var comandas = repositorio.RetornaComandas().ToList();
+            var comandas = db.Comanda;
+            foreach (var comanda in comandas)
+            {
+                comanda.success = true;
+                //comanda.pedidos = new List<Pedido>();
+                comanda.pedidos = RetornaPedidos().Where(x => x.idComanda == comanda.idComanda &&
+                x.codigoStatusAtualPedido == int.Parse(codigoStatusPedido)).ToList();
+            }
+            return comandas;
+        }
+
+        public IQueryable<Comanda> RetornaComandaPorCanal(string canalDeAtendimento)
+        {
+            //var comandas = repositorio.RetornaComandas().ToList();
+            var comandas = db.Comanda;
+            foreach (var comanda in comandas)
+            {
+                comanda.success = true;
+                //comanda.pedidos = new List<Pedido>();
+                comanda.pedidos = RetornaPedidos().Where(x => x.idComanda == comanda.idComanda &&
+                x.canalAtendimento == canalDeAtendimento).ToList();
+            }
+            return comandas;
+        }
+
+
         #endregion
 
 

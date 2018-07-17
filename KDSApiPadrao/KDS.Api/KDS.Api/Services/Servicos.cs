@@ -42,20 +42,23 @@ namespace KDS.Api.Services
             return repositorio.PegaItensPorPedido(pedido);
         }
 
-        internal List<Comanda> RetornaComandaPorStatus(string codigoStatusPedido)
+        public IQueryable<Comanda> RetornaComandaPorStatus(string codigoStatusPedido)
         {
             var comandas = repositorio.RetornaComandas().ToList();
+            var listaStatus = codigoStatusPedido.Split('_').ToList();
             foreach (var comanda in comandas)
             {
                 comanda.success = true;
-                //comanda.pedidos = new List<Pedido>();
+                //comanda.pedidos = new List<Pedido>();                
                 comanda.pedidos = RetornaPedidos().Where(x => x.idComanda == comanda.idComanda &&
-                x.codigoStatusAtualPedido == int.Parse(codigoStatusPedido)).ToList();
+                listaStatus.Contains(x.codigoStatusAtualPedido.ToString())).ToList();
+                //comanda.pedidos = RetornaPedidos().Where(x => x.idComanda == comanda.idComanda &&
+                //x.codigoStatusAtualPedido == int.Parse(codigoStatusPedido)).ToList();
             }
-            return comandas;
+            return comandas.AsQueryable();
         }
 
-        internal List<Comanda> RetornaComandaPorCanal(string canalDeAtendimento)
+        public IQueryable<Comanda> RetornaComandaPorCanal(string canalDeAtendimento)
         {
             var comandas = repositorio.RetornaComandas().ToList();
             foreach (var comanda in comandas)
@@ -65,7 +68,7 @@ namespace KDS.Api.Services
                 comanda.pedidos = RetornaPedidos().Where(x => x.idComanda == comanda.idComanda &&
                 x.canalAtendimento == canalDeAtendimento).ToList();
             }
-            return comandas;
+            return comandas.AsQueryable();
         }
 
         public IQueryable<Comanda> RetornaComandas()
@@ -96,6 +99,5 @@ namespace KDS.Api.Services
             return repositorio.InserePedido(comanda, canaldeEntrada);
         }
 
-       
     }
 }

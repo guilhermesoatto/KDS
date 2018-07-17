@@ -9,6 +9,8 @@ namespace KDS.Api.Repositorio.Interface
     public interface IRepository
     {
         IQueryable<Comanda> RetornaComandas();
+        IQueryable<Comanda> RetornaComandaPorCanal(string canalAtendimento);
+        IQueryable<Comanda> RetornaComandaPorStatus(string codigoStatusPedido);
         Pedido PegaItensPorPedido(Pedido pedido);
         IQueryable<Pedido> RetornaPedidos();
         Comanda InserePedido(Comanda comanda, string canaldeEntrada);
