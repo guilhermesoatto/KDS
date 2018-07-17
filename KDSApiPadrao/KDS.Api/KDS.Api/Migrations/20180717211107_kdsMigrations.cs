@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace KDS.Api.Migrations
 {
-    public partial class kdsMigration : Migration
+    public partial class kdsMigrations : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -19,6 +19,22 @@ namespace KDS.Api.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Comanda", x => x.idComanda);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Historico",
+                columns: table => new
+                {
+                    idHistorico = table.Column<long>(nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    id = table.Column<int>(nullable: false),
+                    idStatus = table.Column<int>(nullable: false),
+                    tipo = table.Column<string>(maxLength: 50, nullable: true),
+                    dataHora = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Historico", x => x.idHistorico);
                 });
 
             migrationBuilder.CreateTable(
@@ -154,6 +170,9 @@ namespace KDS.Api.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Historico");
+
             migrationBuilder.DropTable(
                 name: "ItemAdicional");
 

@@ -1,0 +1,43 @@
+DROP TRIGGER TRI_PEDIDO;
+
+CREATE TRIGGER TRI_PEDIDO
+         AFTER INSERT
+            ON Pedido
+      FOR EACH ROW
+BEGIN
+    INSERT INTO Historico (
+                              Id,
+                              IdStatus,
+                              Tipo,
+                              DataHora
+                          )
+                          VALUES (
+                              new.idPedido,
+                              1,
+                              'PEDIDO',
+                              DATETIME('now') 
+                          );
+END;
+
+========================================
+
+DROP TRIGGER TRU_PEDIDO;
+
+CREATE TRIGGER TRU_PEDIDO
+         AFTER UPDATE
+            ON Pedido
+      FOR EACH ROW
+BEGIN
+    INSERT INTO Historico (
+                              Id,
+                              IdStatus,
+                              Tipo,
+                              DataHora
+                          )
+                          VALUES (
+                              old.idPedido,
+                              new.codigoStatusAtualPedido,
+                              'PEDIDO',
+                              DATETIME('now') 
+                          );
+END;

@@ -35,6 +35,7 @@ namespace KDS.Api.Models
         public int codigoStatusAtualPedido { get; set; }
 
         //[NotMapped]
+        [DataType(DataType.DateTime)]
         [DisplayFormat(DataFormatString = "{0:s}")]
         public DateTime dataHoraInclusao { get; set; }
 

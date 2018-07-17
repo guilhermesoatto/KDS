@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KDS.Api.Migrations
 {
     [DbContext(typeof(DataModel))]
-    [Migration("20180713141651_kdsMigration")]
-    partial class kdsMigration
+    [Migration("20180717211107_kdsMigrations")]
+    partial class kdsMigrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -31,6 +31,25 @@ namespace KDS.Api.Migrations
                     b.HasKey("idComanda");
 
                     b.ToTable("Comanda");
+                });
+
+            modelBuilder.Entity("KDS.Api.Models.Historico", b =>
+                {
+                    b.Property<long>("idHistorico")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("dataHora");
+
+                    b.Property<int>("id");
+
+                    b.Property<int>("idStatus");
+
+                    b.Property<string>("tipo")
+                        .HasMaxLength(50);
+
+                    b.HasKey("idHistorico");
+
+                    b.ToTable("Historico");
                 });
 
             modelBuilder.Entity("KDS.Api.Models.Item", b =>

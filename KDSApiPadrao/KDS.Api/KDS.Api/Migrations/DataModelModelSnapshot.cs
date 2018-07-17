@@ -31,6 +31,25 @@ namespace KDS.Api.Migrations
                     b.ToTable("Comanda");
                 });
 
+            modelBuilder.Entity("KDS.Api.Models.Historico", b =>
+                {
+                    b.Property<long>("idHistorico")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("dataHora");
+
+                    b.Property<int>("id");
+
+                    b.Property<int>("idStatus");
+
+                    b.Property<string>("tipo")
+                        .HasMaxLength(50);
+
+                    b.HasKey("idHistorico");
+
+                    b.ToTable("Historico");
+                });
+
             modelBuilder.Entity("KDS.Api.Models.Item", b =>
                 {
                     b.Property<long>("idItem")

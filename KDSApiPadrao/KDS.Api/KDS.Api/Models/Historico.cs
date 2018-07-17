@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace KDS.Api.Models
 {
+    [Table("Historico")]
     public class Historico
     {
         [Key]
@@ -15,6 +16,8 @@ namespace KDS.Api.Models
         public int idStatus { get; set; }
         [StringLength(50)]
         public string tipo { get; set; }
+
+        [DataType(DataType.DateTime)]
         public DateTime dataHora { get; set; }
     }
 }

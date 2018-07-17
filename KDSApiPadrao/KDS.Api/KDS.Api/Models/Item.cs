@@ -37,6 +37,7 @@ namespace KDS.Api.Models
         [StringLength(150)]
         public string observacao { get; set; }
 
+        [DataType(DataType.DateTime)]
         [DisplayFormat(DataFormatString = "{0:s}")]
         public DateTime dataHoraInclusao { get; set; }
 

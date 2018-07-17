@@ -1,5 +1,6 @@
 ﻿using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace KDS.Api.Models
 {
@@ -16,6 +17,7 @@ namespace KDS.Api.Models
         public DbSet<ItemAdicional> ItemAdicional { get; set; }
         public DbSet<ItemInsumo> ItemInsumo { get; set; }
         public DbSet<Status> Status { get; set; }
+        public DbSet<Historico> Historico { get; set; }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
@@ -32,6 +34,7 @@ namespace KDS.Api.Models
             builder.Entity<Comanda>().HasKey(m => m.idComanda);
             base.OnModelCreating(builder);
 
+
             builder.Entity<Pedido>().HasKey(m => m.idPedido);
             base.OnModelCreating(builder);
 
@@ -45,6 +48,9 @@ namespace KDS.Api.Models
             base.OnModelCreating(builder);
 
             builder.Entity<Status>().HasKey(m => m.idStatus);
+            base.OnModelCreating(builder);
+
+            builder.Entity<Historico>().HasKey(m => m.idHistorico);
             base.OnModelCreating(builder);
         }
 
