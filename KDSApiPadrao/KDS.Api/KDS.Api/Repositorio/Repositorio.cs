@@ -104,14 +104,24 @@ namespace KDS.Api.Repositorio
                 */
 
                 int totalItensPedido = db.Item.Where(w => w.idPedido == pedido.idPedido).Count();
+                int itensPedidoPreparar = db.Item.Where(w => w.idPedido == pedido.idPedido && w.codigoStatusAtualItem == (int)CodStatusPedido.Preparar).Count();
                 int itensPedidoPronto = db.Item.Where(w => w.idPedido == pedido.idPedido && w.codigoStatusAtualItem == (int)CodStatusPedido.Pronto).Count();
                 int itensPedidoCancelado = db.Item.Where(w => w.idPedido == pedido.idPedido && w.codigoStatusAtualItem == (int)CodStatusPedido.Cancelado).Count();
                 int itensPedidoEmPreparo = db.Item.Where(w => w.idPedido == pedido.idPedido && w.codigoStatusAtualItem == (int)CodStatusPedido.EmPreparo).Count();
+                int itensPedidoEntregue = db.Item.Where(w => w.idPedido == pedido.idPedido && w.codigoStatusAtualItem == (int)CodStatusPedido.Entregue).Count();
 
                 if (totalItensPedido == itensPedidoPronto)
                 {
                     pedido.statusAtualPedido = "PRONTO";
                     pedido.codigoStatusAtualPedido = (int)CodStatusPedido.Pronto;
+                }
+                else if (itensPedidoPreparar > 0)
+                {
+                    if (totalItensPedido == itensPedidoPreparar)
+                    {
+                        pedido.statusAtualPedido = "PREPARAR";
+                        pedido.codigoStatusAtualPedido = (int)CodStatusPedido.Preparar;
+                    }
                 }
                 else if (itensPedidoCancelado > 0)
                 {
@@ -127,6 +137,14 @@ namespace KDS.Api.Repositorio
                     {
                         pedido.statusAtualPedido = "EM PREPARO";
                         pedido.codigoStatusAtualPedido = (int)CodStatusPedido.EmPreparo;
+                    }
+                }
+                else if (itensPedidoEntregue > 0)
+                {
+                    if (totalItensPedido == itensPedidoEntregue)
+                    {
+                        pedido.statusAtualPedido = "ENTREGUE";
+                        pedido.codigoStatusAtualPedido = (int)CodStatusPedido.Entregue;
                     }
                 }
             }

@@ -34,6 +34,13 @@ namespace KDS.Api
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddCors(o => o.AddPolicy("CORS", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
+
             var connection = Configuration["ConexaoSqlite:SqliteConnectionString"];
 
             services.AddDbContext<DataModel>(options =>
@@ -57,6 +64,7 @@ namespace KDS.Api
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseCors("CORS");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
